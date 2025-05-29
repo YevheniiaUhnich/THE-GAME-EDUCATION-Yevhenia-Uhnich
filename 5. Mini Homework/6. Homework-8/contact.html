@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/5. Mini Homework/style.css" />
+  </head>
+  <body>
+    <footer>
+      <h4 class="titleFore">Мої контакти</a></h4>
+      <address class="address">
+        Авторка блогу: Євгенія<br />
+        Телефон: +38 068 111-11-11 <br />
+        E-mail: 11111@gmail.com
+      </address>
+
+      <h3 class="titleTree"><a href="#form">Додати контакт</a></h3>
+
+      <form id="form">
+        <label for="name">Name</label>
+        <input
+          class="inputOne"
+          type="text"
+          id="name"
+          placeholder="Name"
+          required
+          autofocus />
+        <label for="sername">Last name</label>
+        <input
+          class="inputOne"
+          type="text"
+          id="sername"
+          placeholder="Last name" />
+        <lable for="email">E-mail</lable>
+        <input
+          class="inputOne"
+          type="email"
+          id="email"
+          placeholder="E-mail"
+          required />
+        <lable for="paswword">Password</lable>
+        <input
+          class="inputOne"
+          type="password"
+          id="password"
+          placeholder="Password"
+          required />
+
+        <label for="cities">Оберіть місто:</label>
+        <select>
+          <option value="kyiv">Київ</option>
+          <option value="dnipro">Дніпро</option>
+          <option value="kremenchuk">Кременчук</option>
+          <option value="lviv">Львів</option>
+          <option value="odesa">Одеса</option>
+          <option value="kharkiv">Харків</option>
+          <option value="ternopil">Тернопіль</option>
+          <option value="drogobych">Дрогобич</option>
+        </select>
+        <textarea
+          class="message"
+          name="message"
+          rows="5"
+          cols="30"
+          maxlength="250"
+          placeholder="Your message"></textarea>
+
+        <button>Add</button>
+      </form>
+    </footer>
+  </body>
+</html>
