@@ -276,5 +276,122 @@
     <!-- My Homework 6 -->
 
     <h2 class="titleTwo">Homework 6</h2>
+
+    <!-- Завдання 1: Створи форму "Реєстрація на курс" -->
+
+    <h3 class="titleTree">Реєстрація на курс</h3>
+
+    <form class="formOne">
+      <label for="name">Name</label>
+      <input
+        class="inputOne"
+        type="text"
+        id="name"
+        placeholder="Name"
+        required
+        autofocus />
+      <label for="sername">Last name</label>
+      <input
+        class="inputOne"
+        type="text"
+        id="sername"
+        placeholder="Last name"
+        required />
+      <lable for="email">E-mail</lable>
+      <input
+        class="inputOne"
+        type="email"
+        id="email"
+        placeholder="E-mail"
+        pattern="[A-Za-z]{3,}"
+        required />
+      <lable for="paswword">Password</lable>
+      <input
+        class="inputOne"
+        type="password"
+        id="password"
+        placeholder="Password"
+        required />
+      <label for="cities">Вибір курсу</label>
+      <select>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="UI/UX">UI/UX</option>
+      </select>
+      <p>Стать:</p>
+      <label>
+        <input type="radio" name="gender" value="male" />
+        Чоловіча </label
+      ><br />
+
+      <label>
+        <input type="radio" name="gender" value="female" />
+        Жіноча </label
+      ><br />
+
+      <label>
+        <input type="radio" name="gender" value="other" />
+        Інше
+      </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" name="terms" required />
+        <span>Згода з умовами</span>
+      </label>
+      <button type="submit">Зареєструватися</button>
+    </form>
+
+    <!-- Завдання 2: Створи форму  -->
+
+    <form>
+      <label for="name">Name</label>
+      <input
+        class="inputOne"
+        type="text"
+        id="name"
+        placeholder="Name"
+        required
+        autofocus />
+      <label for="sername">Last name</label>
+      <input
+        class="inputOne"
+        type="text"
+        id="sername"
+        placeholder="Last name" />
+      <lable for="email">E-mail</lable>
+      <input
+        class="inputOne"
+        type="email"
+        id="email"
+        placeholder="E-mail"
+        required />
+      <lable for="paswword">Password</lable>
+      <input
+        class="inputOne"
+        type="password"
+        id="password"
+        placeholder="Password"
+        required />
+
+      <label for="cities">Оберіть місто:</label>
+      <select>
+        <option value="kyiv">Київ</option>
+        <option value="dnipro">Дніпро</option>
+        <option value="kremenchuk">Кременчук</option>
+        <option value="lviv">Львів</option>
+        <option value="odesa">Одеса</option>
+        <option value="kharkiv">Харків</option>
+        <option value="ternopil">Тернопіль</option>
+      </select>
+      <textarea
+        class="message"
+        name="message"
+        rows="5"
+        cols="30"
+        maxlength="250"
+        placeholder="Your message"></textarea>
+
+      <button>Send</button>
+    </form>
   </body>
 </html>
