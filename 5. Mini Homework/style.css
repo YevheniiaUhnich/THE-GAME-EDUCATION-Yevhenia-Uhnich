@@ -45,3 +45,45 @@ body {
 .address {
   font-style: normal;
 }
+
+.titleBook {
+  margin-top: 60px;
+}
+
+.listFood {
+  list-style: none;
+  padding-left: 0;
+}
+
+.listFood li::before {
+  content: "➤";
+  color: #333;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+}
+
+.titleTermin {
+  font-weight: 700;
+}
+
+.week {
+  font-size: 22px;
+}
+.listDay {
+  list-style: none;
+}
+.dayOfWeek {
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+}
+
+.dayOfWeek li::before {
+  content: "➤";
+  color: #08ca22;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  list-style: none;
+}
