@@ -87,3 +87,19 @@ body {
   margin-right: 0.5em;
   list-style: none;
 }
+
+.titleTable {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.column {
+  border: 2px solid #333;
+  margin: 0;
+  padding: 0;
+}
