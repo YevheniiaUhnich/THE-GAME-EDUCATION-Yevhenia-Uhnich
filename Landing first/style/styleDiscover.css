@@ -102,28 +102,35 @@ body {
 
 /* ----------------------------------------- */
 
-/* @media screen and (min-width: 768px) {
-  .heroSection {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet {
     display: flex;
-    flex-direction: row;
+    gap: 40px;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 768px;
-    margin: 0 auto;
-  }
-} */
+    padding: 20px;
+    margin-top: 80px;
 
-/* @media screen and (min-width: 768px) {
-  .tablet {
-    width: 330px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapperHero {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 768px) {
   .foreTitleTablet {
-    width: 330px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
   }
-} */
+}
 
 .titleHero {
   color: rgba(255, 255, 255, 1);
@@ -132,15 +139,18 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 315px;
   padding-left: 30px;
+  line-height: 1.2;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .titleHero {
     font-size: 38px;
-    max-width: 330px;
+    margin-top: 0;
+    max-width: 260px;
     padding-left: 0;
+    margin-bottom: 0;
   }
-} */
+}
 
 .textHero {
   color: rgba(255, 255, 255, 1);
@@ -151,22 +161,13 @@ body {
   padding-left: 30px;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .textHero {
-    max-width: 330px;
     padding-left: 0;
-    margin-top: 20px;
+    padding-top: 0;
+    max-width: 260px;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .blockImgTablet {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    width: 330px;
-  }
-} */
 
 .blockDescription {
   background: rgb(59, 59, 59, 1);
@@ -209,12 +210,6 @@ body {
   padding-left: 20px;
 }
 
-/* @media screen and (min-width: 768px) {
-  .blockAvatarDescription {
-    padding-left: 20px;
-  }
-} */
-
 .btnHero {
   background: rgba(162, 89, 255, 1);
   color: rgba(255, 255, 255, 1);
@@ -237,9 +232,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .btnHero {
-    margin-left: 20px;
-    margin-right: 0;
-    margin-top: 30px;
+    position: absolute;
+    top: 400px; /* Підлаштуй це значення вручну, щоб кнопка була під текстом */
+    left: 60px; /* Підлаштуй, щоб вирівняти з текстом */
+    width: 224px; /* Як у тебе вже в стилях */
+    margin: 0;
   }
 }
 
@@ -249,9 +246,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .statsWrapper {
-    align-items: start;
-    justify-content: flex-start;
-    margin-top: 30px;
+    width: 280px;
+    margin-left: 40px;
+    position: absolute;
+    top: 480px;
+    left: 12px;
   }
 }
 
@@ -276,7 +275,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .listHero {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
@@ -312,7 +311,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 330px;
+    max-width: 330px;
     margin: 0;
   }
 }
@@ -336,16 +335,14 @@ body {
   }
 }
 
-/* @media screen and (min-width: 768px) {
-  .avatar img {
-    position: absolute;
-    top: 0;
-    left: 380px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+@media screen and (min-width: 768px) {
+  .blockImgTablet {
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+    margin: 0 auto;
   }
-} */
+}
 
 .avatar img {
   width: 24px;
