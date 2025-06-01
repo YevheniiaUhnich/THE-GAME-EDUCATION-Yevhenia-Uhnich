@@ -51,24 +51,20 @@
       </div>
     </header>
     <main>
+
       <!-- Hero section -->
 
       <section className="heroSection">
             <div class="blockImgTablet">
             <div class="wrapperHero"> 
-              <!-- (об'єднує два великих діва: блок з картинкою і кнопкою) -->
             <div class="tablet"> 
-              <!-- заголовок, текст, карточка з кнопкою   -->
             <div class="foreTitleTablet"> 
-              <!-- (тільки заголовок і текст)    -->
             <h1 class="titleHero">Discover digital art & Collect NFTs</h1>
             <p class="textHero">
               NFT marketplace UI created with Anima for Figma. Collect, buy and
               sell art from more than 20k NFT artists.
             </p>
             </div>
-          
-
           <div class="blockImg">
             
             <img
@@ -101,7 +97,6 @@
               Get Started
             </button>
             </div>
-
             </div>
 
            <div class="statsWrapper">
@@ -118,43 +113,49 @@
     <div class="listHeroText">Artists</div>
   </div>
 </div>
-          
-        <!-- </div> -->
       </section>
 
     <!-- Trending Collection -->
 
     <article>
-      <div class="blockTrending">
-        <h2 class="titleCollection">Trending Collection</h2>
-        <p class="textCollection">Checkout our weekly updated trending collection.</p>
-        <img 
+   <h2 class="titleCollection">Trending Collection</h2>   
+  <p class="textCollection">Checkout our weekly updated trending collection.</p>
+  
+
+  <div class="blockTrendingImage">
+    <!-- Перша карточка -->
+    <div class="ImageOne">
+      <img 
         srcset="
-                ./image/1x/PrimaryDesktop@1x.jpg  330w,
-                ./image/2x/PrimaryDesktop@2x.jpg 660w,
-                ./image/1x/PrimaryTablet@1x.jpg   315w,
-                ./image/2x/PrimaryTablet@2x.jpg  630w,
-                ./image/1x/PrimaryMobile@1x.jpg  315w,
-                ./image/2x/PrimaryMobile@2x.jpg   630w
-              "
-              size="(min-width: 1200px) 330px, (min-width: 768px) 315px, (min-width: 375px) 315px, (min-width: 320px) 315px, (max-width: 374px) 280px"
-              src="./image/1x/PrimaryMobile@1x.jpg"
-              alt="Keemun-dog"/>
-      </div>
+          ./image/1x/PrimaryDesktop@1x.jpg  330w,
+          ./image/2x/PrimaryDesktop@2x.jpg 660w,
+          ./image/1x/PrimaryTablet@1x.jpg   315w,
+          ./image/2x/PrimaryTablet@2x.jpg  630w,
+          ./image/1x/PrimaryMobile@1x.jpg  315w,
+          ./image/2x/PrimaryMobile@2x.jpg   630w
+        "
+        sizes="(min-width: 1200px) 330px, (min-width: 768px) 315px, (max-width: 767px) 100vw"
+        src="./image/1x/PrimaryMobile@1x.jpg"
+        alt="Keemun-dog"
+      />
+
       <div class="blockSmallImage">
         <img src="./image/1x/Secondary.jpg" alt="Keemun-cat" />
         <img src="./image/1x/SecondaryBear@1x.jpg" alt="Keemun-bear" />
         <div class="empty-square">1025+</div>
       </div>
-      <div>
-        <h3 class="titleAnimals">DSGN Animals</h3>
-        <div class="blockAvatarAnimals">
-              <div class="avatar" role="img" aria-label="Avatar of Animakid">
-              <img src="./image/1x/Avatar 6.png" alt="MrFox" />  
-              </div> 
-            <p class="mrFox">MrFox</p> 
+
+      <h3 class="titleAnimals">DSGN Animals</h3>
+
+      <div class="blockAvatarAnimals">
+        <div class="avatarAnimal" role="img" aria-label="Avatar of Animakid">
+          <img src="./image/1x/Avatar 6.png" alt="MrFox" />
         </div>
-    </article>
+        <p class="mrFox">MrFox</p>
+      </div>
+    </div>
+  </div>
+</article>
 
     <!-- Top creators -->
 
