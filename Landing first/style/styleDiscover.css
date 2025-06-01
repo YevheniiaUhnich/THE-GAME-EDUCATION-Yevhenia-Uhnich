@@ -489,6 +489,11 @@ body {
     gap: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .ImageTwoTablet {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .ImageTwoTablet {
@@ -554,7 +559,7 @@ body {
 
 /* Top creators */
 
-.creators {
+.titleCreators {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -562,6 +567,11 @@ body {
   margin-left: 30px;
   margin-top: 80px;
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .titleCreators {
+    margin-left: 40px;
+  }
 }
 
 .textCreators {
@@ -575,12 +585,29 @@ body {
   margin-left: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .textCreators {
+    margin-left: 40px;
+  }
+}
+
 .listCreators {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .listCreators {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 80px;
+    gap: 30px;
+  }
 }
 
 .creatorsSepar {
@@ -592,6 +619,16 @@ body {
   background: rgba(59, 59, 59, 1);
   border-radius: 20px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .creatorsSepar {
+    width: 330px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0;
+  }
 }
 
 .creatorsSepar img {
@@ -643,8 +680,54 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .creatorContent {
+    position: relative;
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btnCreator {
+    margin: 0;
+    position: absolute;
+    top: 1320px;
+    right: -2px;
+    margin-right: 60px;
+  }
+}
+
 .iconCreator {
   fill: rgba(162, 89, 255, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .creatorsSeparTablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .creatorsSeparTablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    gap: 40px;
+    background: rgba(59, 59, 59, 1);
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .creatorsSeparTablet img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
 }
 
 /* Browse Categories */
