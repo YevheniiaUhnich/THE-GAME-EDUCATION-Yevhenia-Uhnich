@@ -2018,9 +2018,27 @@ body {
   justify-content: flex-start;
 }
 
+.blockLogo {
+  padding-left: 0;
+  margin-left: 0;
+}
+
 @media screen and (min-width: 768px) {
   .blockFooter {
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blockFooter {
+    width: 988px;
+    height: 334px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 60px;
   }
 }
 
@@ -2082,9 +2100,22 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .blockExplore {
+    width: 240px;
+    margin-bottom: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .textExplore {
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .textExplore {
+    margin-top: 0;
   }
 }
 
@@ -2127,6 +2158,13 @@ body {
 @media screen and (min-width: 768px) {
   .textConnect {
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blockJoin {
+    width: 420px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2242,6 +2280,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .btnSubscribeTablet {
+    right: 120px;
+  }
+}
+
 .custom-line {
   border: none;
   height: 1px;
@@ -2257,6 +2301,14 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .custom-line {
+    width: 1049px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+}
+
 .market {
   font-weight: 400;
   font-size: 12px;
@@ -2267,5 +2319,11 @@ body {
 @media screen and (min-width: 768px) {
   .market {
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .market {
+    margin-left: 40px;
   }
 }
