@@ -1313,10 +1313,36 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* Join our weekly */
+
+@media screen and (min-width: 768px) {
+  .astronaut {
+    display: none;
+  }
+}
+
 .blockAstronaut {
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (min-width: 768px) {
+  .blockAstronautTablet {
+    width: 690px;
+    height: 360px;
+    background: rgb(59, 59, 59, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+  }
+}
+
 .blockAstronaut img {
   width: 315px;
   height: 255px;
@@ -1326,7 +1352,26 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .blockAstronautTablet img {
+    width: 300px;
+    height: 280px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blockTextTablet {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .titleAstronaut {
+  width: 200px;
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
   font-weight: 600;
@@ -1344,6 +1389,12 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-left: 40px;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .textAstronaut {
+    margin-left: 80px;
+  }
 }
 
 .btnAdress {
@@ -1368,6 +1419,16 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .btnAdress {
+    width: 300px;
+    height: 46px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
 .btnSubscribe {
   background: transparent;
   color: rgba(255, 255, 255, 1);
@@ -1388,6 +1449,16 @@ body {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .btnSubscribe {
+    width: 300px;
+    height: 46px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 40px;
+  }
 }
 
 .iconButtonLetter {
