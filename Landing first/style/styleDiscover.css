@@ -1197,7 +1197,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .listTrendingTablet {
     display: none;
   }
@@ -1219,6 +1219,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .titleDiscover {
+    margin-left: 100px;
+  }
+}
+
 .miniTitle {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -1234,6 +1240,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .miniTitle {
+    margin-left: 100px;
+  }
+}
+
 .blockTrending {
   padding-left: 0;
 }
@@ -1245,6 +1257,12 @@ body {
     gap: 30px;
     list-style: none;
     margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blockTrending {
+    margin-left: 100px;
   }
 }
 
