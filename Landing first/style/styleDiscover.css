@@ -166,8 +166,7 @@ body {
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
   font-weight: 600;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  width: 315px;
+  font-family: "Work Sans", sans-serif;
   padding-left: 30px;
   line-height: 1.2;
 }
@@ -342,9 +341,10 @@ body {
 
 .hero__stat-number {
   color: rgba(255, 255, 255, 1);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 8px;
+  font-family: "Space Mono", monospace;
 }
 
 @media screen and (min-width: 768px) {
