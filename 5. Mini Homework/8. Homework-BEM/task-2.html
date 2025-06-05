@@ -7,54 +7,50 @@
     <link rel="stylesheet" href="/5. Mini Homework/8. Homework-BEM/style.css" />
   </head>
   <body>
-    <div class="section__catalog-product">
-      <h2 class="section__ctalog-title">MacBook Air 2021 (з чіпом M1)</h2>
+    <section class="section__catalog-product">
+      <h2 class="catalog__title">MacBook Air 2021 (з чіпом M1)</h2>
       <img
         src="/5. Mini Homework/8. Homework-BEM/Image/macbook.jpg"
-        alt="MacBook" />
+        alt="MacBook"
+        class="catalog__image" />
 
-      <div class="section__catalog-description">
-        <strong class="section__catalog-title-description">Опис:</strong>
-        <p class="section__catalog-product-description">
+      <div class="catalog">
+        <strong class="catalog__content">Опис:</strong>
+        <p class="catalog__description">
           MacBook Air 2021 — це надлегкий, стильний і потужний ноутбук від Apple
           з революційним процесором Apple M1, який забезпечує виняткову
           продуктивність і енергоефективність. Він ідеально підходить для
           навчання, роботи та щоденного користування.
         </p>
-        <strong class="section__catalog-list-title-description"
-          >Основні характеристики:</strong
-        >
-        <ul class="section__catalog-list-product-description">
-          <li class="section__catalog-list-product-description-advantages">
+        <strong class="catalog__content">Основні характеристики:</strong>
+        <ul class="catalog__about-list">
+          <li class="catalog__about-list-item">
             Дисплей: 13,3″ Retina (2560×1600)
           </li>
-          <li class="section__catalog-list-product-description-advantages">
+
+          <li class="catalog__about-list-item">
             Процесор: Apple M1 (8-ядерний CPU, 7–8-ядерний GPU)
           </li>
-          <li class="section__catalog-list-product-description-advantages">
+          <li class="catalog__about-list-item">
             Оперативна пам’ять: 8 ГБ або 16 ГБ
           </li>
-          <li class="section__catalog-list-product-description-advantages">
+          <li class="catalog__about-list-item">
             SSD: 256 ГБ, 512 ГБ, 1 ТБ або 2 ТБ
           </li>
-          <li class="section__catalog-list-product-description-advantages">
+          <li class="catalog__about-list-item">
             Час роботи: до 18 годин без заряджання
           </li>
-          <li class="section__catalog-list-product-description-advantages">
-            Вага: лише 1,29 кг
-          </li>
-          <li class="section__catalog-list-product-description-advantages">
-            Операційна система: macOS
-          </li>
+          <li class="catalog__about-list-item">Вага: лише 1,29 кг</li>
+          <li class="catalog__about-list-item">Операційна система: macOS</li>
         </ul>
       </div>
 
       <p
         class="section__catalog-product-price section__catalog-product-price--sale">
         від 39 999 грн
-        <span class="section__catalog-product-old-price">від 49 999 грн</span>
+        <span class="--old">від 49 999 грн</span>
       </p>
       <button class="button button--disabled" disabled>Недоступно</button>
-    </div>
+    </section>
   </body>
 </html>
