@@ -9,19 +9,19 @@ body {
   }
 }
 
-.blockLogo {
+.header__logo {
   padding: 20px;
   margin-left: 20px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 1199px) {
-  .blockNavMenu {
+  .header__nav {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .blockNavMenu {
+  .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,15 +29,15 @@ body {
   }
 }
 
-.iconHeader {
+.header__icon-storefront {
   fill: rgba(162, 89, 255, 1);
 }
 
-.iconLogo {
+.header__icon-logo {
   fill: rgba(255, 255, 255, 1);
 }
 
-.blockNav {
+.header__navigation {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -45,13 +45,13 @@ body {
   margin-right: 40px;
 }
 
-.listNav {
+.header__menu-list {
   display: flex;
   gap: 10px;
   list-style: none;
 }
 
-.listMenu {
+.header__menu-item {
   border-radius: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -61,7 +61,7 @@ body {
   font-size: 16px;
 }
 
-.btnHeader {
+.header__signup-btn {
   background: rgba(162, 89, 255, 1);
   color: rgba(255, 255, 255, 1);
   border-radius: 20px;
@@ -77,14 +77,14 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.btnLogo {
+.header__signup-icon {
   fill: rgba(255, 255, 255, 1);
 }
 
 /* ---------------------------------------------- */
 /* Mobile menu */
 
-.mobileMenu {
+.header__mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,32 +93,32 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .mobileMenu {
+  .header__mobile {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .mobileMenu {
+  .header__mobile {
     margin-right: 40px;
   }
 }
 
-.iconHeaderMobile {
+.header__mobile-icon-storefront {
   fill: rgba(162, 89, 255, 1);
 }
 
-.iconLogoMobile {
+.header__mobile-icon-logo {
   fill: rgba(255, 255, 255, 1);
 }
 
-.burgerMenu {
+.header__burger-icon {
   fill: rgba(255, 255, 255, 1);
 }
 
 /* Hero section */
 
 @media screen and (min-width: 768px) {
-  .tablet {
+  .hero__tablet-wrapper {
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -132,21 +132,21 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .tablet {
+  .hero__tablet-wrapper {
     width: 1050px;
     margin-left: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .wrapperHero {
+  .hero__wrapper {
     display: flex;
     flex-direction: column;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .foreTitleTablet {
+  .hero__text-block {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -156,13 +156,13 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .foreTitleTablet {
+  .hero__text-block {
     height: auto;
     width: 510px;
   }
 }
 
-.titleHero {
+.hero__title {
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
   font-weight: 600;
@@ -173,7 +173,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .titleHero {
+  .hero__title {
     font-size: 38px;
     margin-top: 0;
     width: 260px;
@@ -183,7 +183,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .titleHero {
+  .hero__title {
     font-size: 67px;
     margin-top: 0;
     width: 410px;
@@ -192,7 +192,7 @@ body {
   }
 }
 
-.textHero {
+.hero__description {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 300px;
@@ -202,7 +202,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .textHero {
+  .hero__description {
     padding-left: 0;
     padding-top: 0;
     width: 260px;
@@ -210,14 +210,14 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .textHero {
+  .hero__description {
     font-size: 22px;
     padding-left: 60px;
     width: 410px;
   }
 }
 
-.blockDescription {
+.hero__description-block {
   background: rgb(59, 59, 59, 1);
   width: 315px;
   display: flex;
@@ -230,7 +230,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .blockDescription {
+  .hero__description-block {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -238,27 +238,27 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blockDescription {
+  .hero__description-block {
     width: 510px;
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-.titleAnimakid {
+.hero__art-title {
   margin: 0;
   color: rgba(255, 255, 255, 1);
   padding-left: 20px;
   padding-top: 20px;
 }
 
-.animakid {
+.hero__author-name {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   font-weight: 400;
 }
 
-.blockAvatarDescription {
+.hero__author {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -266,7 +266,7 @@ body {
   padding-left: 20px;
 }
 
-.btnHero {
+.hero__button {
   background: rgba(162, 89, 255, 1);
   color: rgba(255, 255, 255, 1);
   border-radius: 20px;
@@ -287,7 +287,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .btnHero {
+  .hero__button {
     position: absolute;
     top: 400px;
     left: 60px;
@@ -298,25 +298,25 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .btnHero {
+  .hero__button {
     top: 590px;
     left: 100px;
     width: 224px;
   }
 }
 
-.iconHero {
+.hero__button-icon {
   fill: rgba(255, 255, 255, 1);
 }
 
-.statsWrapper {
+.hero__stats {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .statsWrapper {
+  .hero__stats {
     width: 280px;
     margin-left: 60px;
     position: absolute;
@@ -326,7 +326,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .statsWrapper {
+  .hero__stats {
     width: 510px;
     top: 680px;
     left: -30px;
@@ -334,13 +334,13 @@ body {
   }
 }
 
-.statItem {
+.hero__stat {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.listHero {
+.hero__stat-number {
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
   font-weight: 700;
@@ -348,19 +348,19 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .listHero {
+  .hero__stat-number {
     font-size: 22px;
   }
 }
 
-.listHeroText {
+.hero__stat-label {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 40px;
 }
 
-.blockImg {
+.hero__image-block {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -368,7 +368,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .blockImg {
+  .hero__image-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -378,7 +378,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blockImg {
+  .hero__image-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -390,7 +390,7 @@ body {
   }
 }
 
-.blockImg img {
+.hero__image-block img {
   width: 315px;
   height: 221px;
   display: block;
@@ -401,7 +401,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .blockImg img {
+  .hero__image-block img {
     width: 100%;
     height: auto;
     margin-left: 0;
@@ -410,7 +410,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blockImg img {
+  .hero__image-block img {
     width: 510px;
     height: 510px;
     margin-left: 0;
@@ -418,7 +418,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .blockImgTablet {
+  .hero__content {
     display: flex;
     justify-content: space-between;
     width: 680px;
@@ -426,7 +426,7 @@ body {
   }
 }
 
-.avatar img {
+.hero__avatar img {
   width: 24px;
   height: 24px;
   object-fit: cover;
@@ -436,7 +436,7 @@ body {
 
 /* Trending Collection  */
 
-.titleCollection {
+.trending__title {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -445,7 +445,7 @@ body {
   margin-left: 30px;
 }
 
-.textCollection {
+.trending__subtitle {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
@@ -454,7 +454,7 @@ body {
   margin-left: 30px;
 }
 
-.blockTrendingImage {
+.trending__list {
   width: 330px;
   display: flex;
   flex-direction: column;
@@ -462,14 +462,14 @@ body {
   align-items: center;
 }
 
-.ImageOne {
+.trending__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.ImageOne img {
+.trending__card img {
   width: 315px;
   height: 315px;
   border-radius: 20px;
@@ -477,7 +477,7 @@ body {
   margin-left: 40px;
 }
 
-.blockSmallImage {
+.trending__image-group {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -488,7 +488,7 @@ body {
   margin-top: 20px;
 }
 
-.blockSmallImage img {
+.trending__image-group img {
   width: 100px;
   height: 100px;
   display: flex;
@@ -499,7 +499,7 @@ body {
   align-items: center;
 }
 
-.empty-square {
+.trending__image-count {
   background: rgba(162, 89, 255, 1);
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -513,7 +513,7 @@ body {
   font-size: 16px;
 }
 
-.titleAnimals {
+.trending__collection-name {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -523,7 +523,7 @@ body {
   margin-left: 50px;
 }
 
-.blockAvatarAnimals {
+.trending__author {
   width: 330px;
   display: flex;
   flex-direction: row;
@@ -532,12 +532,12 @@ body {
   gap: 12px;
 }
 
-.avatarAnimal img {
+.trending__author-avatar img {
   width: 24px;
   height: 24px;
 }
 
-.mrFox {
+.trending__author-name {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
@@ -545,18 +545,14 @@ body {
   margin: 0;
 }
 
-.ImageOneTablet {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  .titleCollection {
+  .trending__title {
     margin-left: 90px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .titleCollection {
+  .trending__title {
     margin-top: 120px;
     margin-left: 100px;
     width: 500px;
@@ -566,14 +562,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .textCollection {
+  .trending__subtitle {
     width: 768px;
     margin-left: 90px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .textCollection {
+  .trending__subtitle {
     margin-left: 100px;
     margin-top: 0;
     margin-bottom: 40px;
@@ -582,14 +578,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .ImageOneTablet {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .blockTrendingImage {
+  .trending__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -600,26 +589,26 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blockTrendingImage {
+  .trending__list {
     margin-left: 60px;
     width: 1050px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .ImageTwoTablet {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1199px) {
-  .ImageTree {
+  .trending__card-hidden-desktop {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .ImageTwoTablet {
+@media screen and (max-width: 767px) {
+  .trending__card-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .trending__card {
     display: flex;
     flex-direction: column;
     width: 315px;
@@ -627,29 +616,14 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .ImageTree {
-    display: flex;
-    flex-direction: column;
-    width: 315px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .ImageTwoTablet img {
-    border-radius: 20px;
-    width: 315px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .ImageTree img {
+  .trending__card img {
     border-radius: 20px;
     width: 315px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .blockSmallImageTablet {
+  .trending__image-group {
     width: 315px;
     display: flex;
     flex-direction: row;
@@ -659,7 +633,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blockSmallImageDesktop {
+  .trending__image-group {
     width: 315px;
     display: flex;
     flex-direction: row;
@@ -669,21 +643,21 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .blockSmallImageTablet img {
+  .trending__image-group img {
     width: 100px;
     height: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .blockSmallImageDesktop img {
+  .trending__image-group img {
     width: 100px;
     height: 100px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .titleAnimalsTablet {
+  .trending__collection-name {
     margin-left: 0;
     color: rgba(255, 255, 255, 1);
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -695,7 +669,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .titleAnimalsDesktop {
+  .trending__collection-name {
     margin-left: 0;
     color: rgba(255, 255, 255, 1);
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -707,7 +681,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .blockAvatarAnimalsTablet {
+  .trending__author {
     display: flex;
     flex-direction: row;
     width: 330px;
@@ -718,7 +692,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blockAvatarAnimalsDesktop {
+  .trending__author {
     display: flex;
     flex-direction: row;
     width: 330px;
@@ -729,14 +703,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .blockAvatarAnimalsTablet img {
+  .trending__author img {
     width: 24px;
     height: 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .blockAvatarAnimalsDesktop img {
+  .trending__author img {
     width: 24px;
     height: 24px;
   }
@@ -744,7 +718,7 @@ body {
 
 /* Top creators */
 
-.titleCreators {
+.creators__title {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -756,19 +730,19 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .titleCreators {
+  .creators__title {
     margin-left: 80px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .titleCreators {
+  .creators__title {
     margin-left: 100px;
     font-size: 38px;
   }
 }
 
-.textCreators {
+.creators__subtitle {
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
@@ -780,13 +754,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .textCreators {
+  .creators__subtitle {
     margin-left: 80px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .textCreators {
+  .creators__subtitle {
     margin-left: 100px;
     width: 700px;
     font-size: 22px;
@@ -794,7 +768,7 @@ body {
   }
 }
 
-.listCreators {
+.creators__list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -803,7 +777,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .listCreators {
+  .creators__list {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -814,7 +788,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .listCreators {
+  .creators__list {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -825,7 +799,7 @@ body {
   }
 }
 
-.creatorsSepar {
+.creators__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -837,7 +811,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .creatorsSepar {
+  .creators__item {
     width: 330px;
     display: flex;
     align-items: center;
@@ -847,7 +821,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .creatorsSepar {
+  .creators__item {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -860,14 +834,14 @@ body {
   }
 }
 
-.creatorsSepar img {
+.creators__item img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
 
 @media screen and (min-width: 1200px) {
-  .creatorsSepar img {
+  .creators__item img {
     width: 100px;
     height: 100px;
     margin-top: 20px;
@@ -875,7 +849,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blockKeepitreal {
+  .creators__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -883,7 +857,7 @@ body {
   }
 }
 
-.titleKeepitreal {
+.creators__name {
   font-size: 22px;
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -891,21 +865,21 @@ body {
   margin-bottom: 10px;
 }
 
-.textKeepitreal {
+.creators__sales {
   font-size: 16px;
   font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgba(133, 133, 132, 1);
 }
 
-.numberKeepitreal {
+.creators__amount {
   font-size: 16px;
   color: rgba(255, 255, 255, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
 }
 
-.btnCreator {
+.creators__button {
   background: transparent;
   color: rgba(255, 255, 255, 1);
   border-radius: 20px;
@@ -927,17 +901,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .creatorContent {
-    position: relative;
-    max-width: 690px;
-    width: 100%;
+  .creators__content {
     margin: 0 auto;
-    height: 100px;
+    display: flex;
+    flex-direction: row;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .btnCreator {
+  .creators__button {
     margin: 0;
     position: absolute;
     top: 1320px;
@@ -947,7 +919,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .btnCreator {
+  .creators__button {
     width: 247px;
     margin: 0;
     position: absolute;
@@ -957,18 +929,30 @@ body {
   }
 }
 
-.iconCreator {
+.creators__icon {
   fill: rgba(162, 89, 255, 1);
 }
 
 @media screen and (max-width: 767px) {
-  .creatorsSeparTablet {
+  .creators__item--tablet {
     display: none;
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .creators__item--desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+    height: 238px;
+    gap: 20px;
+    background: rgba(59, 59, 59, 1);
+    border-radius: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .creatorsSeparTablet {
+  .creators__item--tablet {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -980,7 +964,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .creatorsSeparTablet {
+  .creators__item--tablet {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -994,7 +978,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .creatorsSeparTablet img {
+  .creators__item--tablet img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -1002,7 +986,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .creatorsSeparTablet img {
+  .creators__item--tablet img {
     width: 100px;
     height: 100px;
     margin-top: 20px;
@@ -1010,21 +994,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .creatorsSeparDesktop {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 240px;
-    height: 238px;
-    gap: 20px;
-    background: rgba(59, 59, 59, 1);
-    border-radius: 20px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .creatorsSeparDesktop img {
+  .creators__item--desktop img {
     width: 100px;
     height: 100px;
     margin-top: 20px;
@@ -1033,7 +1003,7 @@ body {
 }
 
 @media screen and (max-width: 1199px) {
-  .creatorsSeparDesktop {
+  .creators__item--desktop {
     display: none;
   }
 }
