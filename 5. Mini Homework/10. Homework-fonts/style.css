@@ -1,0 +1,82 @@
+@font-face {
+  src: url("fonts/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 375px;
+}
+
+.block__quote-title {
+  width: 255px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: blueviolet;
+  text-align: start;
+  text-shadow: 2px 1px 0 #777;
+}
+
+.block__quote-description {
+  width: 255px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-size: 600;
+}
+
+.block__quote-name {
+  width: 255px;
+  text-align: end;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.decor__line-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.decor__line-icon hr {
+  flex: 1;
+  height: 2px;
+  background-color: #aaa;
+  border: none;
+  min-width: 30px;
+}
+
+.decor__motivation-text {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Work Sans", sans-serif;
+}
+
+.block__quote-title-test {
+  width: 255px;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: blueviolet;
+  text-align: start;
+  box-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad;
+  padding-left: 10px;
+}
+
+.block__quote-description-short {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 255px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-size: 600;
+}
