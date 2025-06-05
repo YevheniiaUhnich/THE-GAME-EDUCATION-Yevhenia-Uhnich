@@ -8,23 +8,23 @@
   </head>
   <body>
     <header>
-      <nav class="blockNavMenu">
-        <div class="blockLogo">
-          <svg class="iconHeader" width="32" height="32">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <svg class="header__icon-storefront" width="32" height="32">
             <use href="./icon/icons.svg#icon-Storefront"></use>
           </svg>
-          <svg class="iconLogo" width="200" height="20">
+          <svg class="header__icon-logo" width="200" height="20">
             <use href="./icon/icons.svg#icon-NFT-Marketplace"></use>
           </svg>
         </div>
-        <div class="blockNav">
-          <ul class="listNav">
-            <li class="listMenu">Marketplace</li>
-            <li class="listMenu">Rankings</li>
-            <li class="listMenu">Connect a wallet</li>
+        <div class="header__navigation">
+          <ul class="header__menu-list"">
+            <li class="header__menu-item">Marketplace</li>
+            <li class="header__menu-item">Rankings</li>
+            <li class="header__menu-item">Connect a wallet</li>
           </ul>
-          <button class="btnHeader">
-            <svg class="btnLogo" width="20" height="20">
+          <button class="header__signup-btn">
+            <svg class="header__signup-icon" width="20" height="20">
               <use href="./icon/icons.svg#icon-User"></use>
             </svg>
             Sign Up
@@ -34,17 +34,17 @@
 
       <!-- Mobile menu -->
 
-      <div class="mobileMenu">
-        <div class="blockLogoMobile">
-          <svg class="iconHeaderMobile" width="24" height="24">
+      <div class="header__mobile">
+        <div class="header__mobile-logo">
+          <svg class="header__mobile-icon-storefront" width="24" height="24">
             <use href="./icon/icons.svg#icon-Storefront"></use>
           </svg>
-          <svg class="iconLogoMobile" width="149" height="15">
+          <svg class="header__mobile-icon-logo" width="149" height="15">
             <use href="./icon/icons.svg#icon-NFT-Marketplace"></use>
           </svg>
         </div>
-        <div>
-          <svg class="burgerMenu" width="24" height="24">
+        <div class="header__mobile-burger">
+          <svg class="header__burger-icon" width="24" height="24">
             <use href="./icon/icons.svg#icon-Burger-Menu""></use>
           </svg>
         </div>
@@ -54,18 +54,18 @@
 
       <!-- Hero section -->
 
-      <section className="heroSection">
-            <div class="blockImgTablet">
-            <div class="wrapperHero"> 
-            <div class="tablet"> 
-            <div class="foreTitleTablet"> 
-            <h1 class="titleHero">Discover Digital Art & Collect NFTs</h1>
-            <p class="textHero">
+      <section className="hero">
+            <div class="hero__content">
+            <div class="hero__wrapper"> 
+            <div class="hero__tablet-wrapper"> 
+            <div class="hero__text-block"> 
+            <h1 class="hero__title">Discover Digital Art & Collect NFTs</h1>
+            <p class="hero__description">
               NFT marketplace UI created with Anima for Figma. Collect, buy and
               sell art from more than 20k NFT artists.
             </p>
             </div>
-          <div class="blockImg">
+          <div class="hero__image-block">
             
             <img
               srcset="
@@ -78,20 +78,21 @@
               "
               size="(min-width: 1200px) 510px, (min-width: 768px) 330px, (min-width: 375px) 315px, (min-width: 320px) 315px, (max-width: 374px) 280px"
               src="./image/1x/ImageHeroMobile@1X.jpg"
-              alt="Keemun-magic" />
-            <div class="blockDescription">
-            <h3 class="titleAnimakid">Space Walking</h3>
-            <div class="blockAvatarDescription">
-              <div class="avatar" role="img" aria-label="Avatar of Animakid">
+              alt="Keemun-magic"
+              class="hero__image" />
+            <div class="hero__description-block">
+            <h3 class="hero__art-title">Space Walking</h3>
+            <div class="hero__author">
+              <div class="hero__avatar" role="img" aria-label="Avatar of Animakid">
               <img src="./image/1x/Avatar 19.png" alt="animakid" />  
             </div>  
-            <h5 class="animakid">Animakid</h5>
+            <h5 class="hero__author-name">Animakid</h5>
             </div>
             </div>
             </div>
             </div>
-<button class="btnHero">
-              <svg class="iconHero" width="20" height="20">
+<button class="hero__button">
+              <svg class="hero__button-icon" width="20" height="20">
                 <use href="./icon/icons.svg#icon-RocketLaunch"></use>
               </svg>
               Get Started
@@ -99,33 +100,33 @@
             </div>
             </div>
 
-           <div class="statsWrapper">
-  <div class="statItem">
-    <div class="listHero">240k+</div>
-    <div class="listHeroText">Total Sale</div>
+           <div class="hero__stats">
+  <div class="hero__stat">
+    <div class="hero__stat-number">240k+</div>
+    <div class="hero__stat-label">Total Sale</div>
   </div>
-  <div class="statItem">
-    <div class="listHero">100k+</div>
-    <div class="listHeroText">Auctions</div>
+  <div class="hero__stat">
+    <div class="hero__stat-number">100k+</div>
+    <div class="hero__stat-label">Auctions</div>
   </div>
-  <div class="statItem">
-    <div class="listHero">240k+</div>
-    <div class="listHeroText">Artists</div>
+  <div class="hero__stat">
+    <div class="hero__stat-number">240k+</div>
+    <div class="hero__stat-label">Artists</div>
   </div>
 </div>
       </section>
 
     <!-- Trending Collection -->
 
-    <article>
-   <h2 class="titleCollection">Trending Collection</h2>   
-  <p class="textCollection">Checkout our weekly updated trending collection.</p>
+    <article class="trending">
+   <h2 class="trending__title">Trending Collection</h2>   
+  <p class="trending__subtitle">Checkout our weekly updated trending collection.</p>
   
 
-  <div class="blockTrendingImage">
+  <div class="trending__list">
     <!-- Перша карточка -->
 
-    <div class="ImageOne">
+    <div class="trending__card">
       <img 
         srcset="
           ./image/1x/PrimaryDesktop@1x.jpg  330w,
@@ -138,27 +139,28 @@
         sizes="(min-width: 1200px) 330px, (min-width: 768px) 315px, (max-width: 767px) 100vw"
         src="./image/1x/PrimaryMobile@1x.jpg"
         alt="Keemun-dog"
+        class="trending__image-main"
       />
 
-      <div class="blockSmallImage">
+      <div class="trending__image-group">
         <img src="./image/1x/Secondary.jpg" alt="Keemun-cat" />
         <img src="./image/1x/SecondaryBear@1x.jpg" alt="Keemun-bear" />
-        <div class="empty-square">1025+</div>
+        <div class="trending__image-count">1025+</div>
       </div>
 
-      <h3 class="titleAnimals">DSGN Animals</h3>
+      <h3 class="trending__collection-name">DSGN Animals</h3>
 
-      <div class="blockAvatarAnimals">
-        <div class="avatarAnimal" role="img" aria-label="Avatar of Animakid">
+      <div class="trending__author">
+        <div class="trending__author-avatar" role="img" aria-label="Avatar of Animakid">
           <img src="./image/1x/Avatar 17.png" alt="MrFox" />
         </div>
-        <p class="mrFox">MrFox</p>
+        <p class="trending__author-name">MrFox</p>
       </div>
     </div>
 
 <!-- друга карточка -->
 
-        <div class="ImageTwoTablet">
+        <div class="trending__card trending__card-hidden">
       <img 
         srcset="
           ./image/1x/graveDesktop@1x.jpg  330w,
@@ -169,27 +171,28 @@
         sizes="(min-width: 1200px) 330px, (min-width: 768px) 315px, (max-width: 767px) 100vw"
         src="./image/1x/graveTablet@1x.jpg"
         alt="Grave"
+         class="trending__image-main"
       />
 
-      <div class="blockSmallImageTablet">
+      <div class="trending__image-group">
         <img src="./image/1x/graveTablet.jpg" alt="Grave" />
         <img src="./image/1x/graveTablet1.jpg" alt="Grave" />
-        <div class="empty-square">1025+</div>
+        <div class="trending__image-count">1025+</div>
       </div>
 
-      <h3 class="titleAnimalsTablet">Magic Mushrooms</h3>
+      <h3 class="trending__collection-name">Magic Mushrooms</h3>
 
-      <div class="blockAvatarAnimalsTablet">
-        <div class="avatarAnimal" role="img" aria-label="Avatar of Animakid">
+      <div class="trending__author">
+        <div class="trending__author-avatar" role="img" aria-label="Avatar of Animakid">
           <img src="./image/1x/Avatar 16.png" alt="Shroomie" />
         </div>
-        <p class="mrFox">Shroomie</p>
+        <p class="trending__author-name">Shroomie</p>
       </div>
     </div>
 
     <!-- треття карточка -->
 
-    <div class="ImageTree">
+    <div class="trending__card trending__card-hidden trending__card-hidden-desktop">
       <img 
         srcset="
           ./image/1x/PrimaryPhotoPlaceholder5@1x.jpg  330w,
@@ -198,21 +201,22 @@
         sizes="(min-width: 1200px) 330px"
         src="./image/1x/PrimaryPhotoPlaceholder5@1x.jpg"
         alt="Skater"
+        class="trending__image-main"
       />
 
-      <div class="blockSmallImageDesktop">
+      <div class="trending__image-group">
         <img src="./image/1x/Secondary Photo Placeholder6.jpg" alt="Skater" />
         <img src="./image/1x/Secondary Photo Placeholder7.jpg" alt="Skater" />
-        <div class="empty-square">1025+</div>
+        <div class="trending__image-count">1025+</div>
       </div>
 
-      <h3 class="titleAnimalsDesktop">Disco Machines</h3>
+      <h3 class="trending__collection-name">Disco Machines</h3>
 
-      <div class="blockAvatarAnimalsDesktop">
-        <div class="avatarAnimal" role="img" aria-label="Avatar of Animakid">
+      <div class="trending__author">
+        <div class="trending__author-avatar" role="img" aria-label="Avatar of Animakid">
           <img src="./image/1x/Avatar 18.png" alt="BeKind2Robots" />
         </div>
-        <p class="mrFox">BeKind2Robots</p>
+        <p class="trending__author-name">BeKind2Robots</p>
       </div>
     </div>
   </div>
@@ -220,115 +224,117 @@
 
     <!-- Top creators -->
 
-    <section>
-      <h2 class="titleCreators">Top creators</h2>
-      <p class="textCreators">Checkout Top Rated Creators on the NFT Marketplace</p>
-      <div class=".creatorContent">
-        <ul class="listCreators">
+    <section class="creators">
+      <h2 class="creators__title">Top creators</h2>
+      <p class="creators__subtitle">Checkout Top Rated Creators on the NFT Marketplace</p>
+      <div class="creators__content">
+        <ul class="creators__list">
 
-          <li class="creatorsSepar">
-            <img src="./image/1x/Avatar 1.jpg" alt="Keepitreal"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Keepitreal</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+           <!-- Картки творців -->
+
+          <li class="creators__item">
+            <img class="creators__avatar" src="./image/1x/Avatar 1.jpg" alt="Keepitreal"/>
+            <div class="creators__info">
+              <h3 class="creators__name">Keepitreal</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSepar">
-            <img src="./image/1x/Avatar 2.jpg" alt="DigiLab"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">DigiLab</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 32.13 ETH</span></p>
+          <li class="creators__item">
+            <img class="creators__avatar" src="./image/1x/Avatar 2.jpg" alt="DigiLab"/>
+            <div class="creators__info">
+              <h3 class="creators__name">DigiLab</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 32.13 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSepar">
-            <img src="./image/1x/Avatar 3.jpg" alt="GravityOne"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">GravityOne</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 28.93 ETH</span></p>
+          <li class="creators__item">
+            <img class="creators__avatar" src="./image/1x/Avatar 3.jpg" alt="GravityOne"/>
+            <div class="creators__info">
+              <h3 class="creators__name">GravityOne</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 28.93 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSepar">
-            <img src="./image/1x/Avatar 4.jpg" alt="Juanie"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Juanie</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 25.30 ETH</span></p>
+          <li class="creators__item">
+            <img class="creators__avatar" src="./image/1x/Avatar 4.jpg" alt="Juanie"/>
+            <div class="creators__info">
+              <h3 class="creators__name">Juanie</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 25.30 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSepar">
-            <img src="./image/1x/Avatar 5.jpg" alt="BlueWhale"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">BlueWhale</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 22.22 ETH</span></p>
+          <li class="creators__item">
+            <img class="creators__avatar" src="./image/1x/Avatar 5.jpg" alt="BlueWhale"/>
+            <div class="creators__info">
+              <h3 class="creators__name">BlueWhale</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 22.22 ETH</span></p>
             </div>
           </li>
 
 <!-- карткu для Tablet -->
 
-          <li class="creatorsSeparTablet">
-            <img src="./image/1x/Avatar 6.jpg" alt="GravityOne"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Mr Fox</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+          <li class="creators__item creators__item--tablet">
+            <img class="creators__avatar" src="./image/1x/Avatar 6.jpg" alt="GravityOne"/>
+            <div class="creators__info">
+              <h3 class="creators__name">Mr Fox</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
 
      <!-- карткu для desktop -->
 
-               <li class="creatorsSeparDesktop">
-            <img src="./image/1x/Avatar 7.jpg" alt="robotica"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Shroomie</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+               <li class="creators__item creators__item--desktop">
+            <img class="creators__avatar" src="./image/1x/Avatar 7.jpg" alt="robotica" />
+            <div class="creators__info">
+              <h3 class="creators__name">Shroomie</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSeparDesktop">
-            <img src="./image/1x/Avatar 8.jpg" alt="Robotica"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Robotica</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+          <li class="creators__item creatorsSeparDesktop">
+            <img class="creators__avatar" src="./image/1x/Avatar 8.jpg" alt="Robotica"/>
+            <div class="creators__info">
+              <h3 class="creators__name">Robotica</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSeparDesktop">
-            <img src="./image/1x/Avatar 9.jpg" alt="RustyRobot"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">RustyRobot</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+          <li class="creators__item creatorsSeparDesktop">
+            <img class="creators__avatar" src="./image/1x/Avatar 9.jpg" alt="RustyRobot"/>
+            <div class="creators__info">
+              <h3 class="creators__name">RustyRobot</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSeparDesktop">
-            <img src="./image/1x/Avatar 10.jpg" alt="Animakid"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Animakid</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+          <li class="creators__item creatorsSeparDesktop">
+            <img class="creators__avatar" src="./image/1x/Avatar 10.jpg" alt="Animakid"/>
+            <div class="creators__info">
+              <h3 class="creators__name">Animakid</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSeparDesktop">
-            <img src="./image/1x/Avatar 11.jpg" alt="Dotgu"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Dotgu</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+          <li class="creators__item creatorsSeparDesktop">
+            <img class="creators__avatar" src="./image/1x/Avatar 11.jpg" alt="Dotgu"/>
+            <div class="creators__info">
+              <h3 class="creators__name">Dotgu</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
 
-          <li class="creatorsSeparDesktop">
-            <img src="./image/1x/Avatar 12.jpg" alt="Ghiblier"/>
-            <div class="blockKeepitreal">
-              <h3 class="titleKeepitreal">Ghiblier</h3>
-              <p class="textKeepitreal">Total Sales: <span class="numberKeepitreal"> 34.53 ETH</span></p>
+          <li class="creators__item creatorsSeparDesktop">
+            <img class="creators__avatar" src="./image/1x/Avatar 12.jpg" alt="Ghiblier"/>
+            <div class="creators__info">
+              <h3 class="creators__name">Ghiblier</h3>
+              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
             </div>
           </li>
         </ul>
 
-        <button class="btnCreator">
-          <svg class="iconCreator" width="20" height="20">
+        <button class="creators__button">
+          <svg class="creators__icon" width="20" height="20">
             <use href="./icon/icons.svg#icon-RocketLaunch"></use>
           </svg>
           View Rankings
