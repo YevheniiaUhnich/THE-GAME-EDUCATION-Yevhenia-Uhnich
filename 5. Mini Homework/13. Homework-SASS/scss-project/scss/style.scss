@@ -1,0 +1,14 @@
+$main-color: #2ecc71;
+$font-stack: 'Arial', sans-serif;
+
+body {
+    font-family: $font-stack;
+    background: #f4f4f4;
+    color: $main-color;
+
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}

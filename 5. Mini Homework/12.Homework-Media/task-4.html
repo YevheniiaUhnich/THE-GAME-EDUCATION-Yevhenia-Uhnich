@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="header__nav-content">
+            <div class="header__nav-block-logo">
+                <img src="./Image/NFT Marketplace.svg" class="header__nav-logo" alt="logo" />
+
+            </div>
+            <div class="header__nav-block-list">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">Home</li>
+                    <li class="header__nav-item">Aboute</li>
+                    <li class="header__nav-item">Contacts</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile -->
+        <nav class="header__nav-content-mobile">
+            <div class="header__nav-block-logo-mobile">
+                <img src="./Image/NFT Marketplace.svg" class="header__nav-logo-mobile" alt="logo" />
+        
+            </div>
+            <div class="header__nav-block-list-mobile">
+                <svg id="burgerIcon" class="header__nav-icon-mobile" width="24" height="24">
+                    <use href="./Image/Burger Menu.svg"></use>
+                </svg>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Модальне вікно -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">Home</li>
+            <li class="mobile-menu__item">About</li>
+            <li class="mobile-menu__item">Contacts</li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    const burgerIcon = document.getElementById('burgerIcon');
+    const menu = document.getElementById('mobileMenu');
+
+    burgerIcon.addEventListener('click', ()=> {
+        menu.classList.toggle('active');
+    });
+</script>
+</html>
