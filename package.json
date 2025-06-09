@@ -1,0 +1,23 @@
+{
+  "name": "the-game-education-yevhenia-uhnich",
+  "version": "1.0.0",
+  "description": "Цей репозиторій створено для структурування та документування навчального процесу з фронтенд-розробки — від базових понять до сучасних фреймворків та інструментів.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YevheniiaUhnich/THE-GAME-EDUCATION-Yevhenia-Uhnich.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YevheniiaUhnich/THE-GAME-EDUCATION-Yevhenia-Uhnich/issues"
+  },
+  "homepage": "https://github.com/YevheniiaUhnich/THE-GAME-EDUCATION-Yevhenia-Uhnich#readme",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}
