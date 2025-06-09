@@ -113,6 +113,11 @@ h3 {
 .catalog__toys-image {
     width: 140px;
     border-radius: 40px;
+    transition: transform 0.5s ease;
+}
+
+.catalog__toys-image:hover {
+    transform: scale(1.05) ;
 }
 
 .catalog__toys-list-description {
@@ -134,10 +139,15 @@ h3 {
     font-size: 20px;
     color: red;
     font-weight: 800;
+    transition: transform 0.5s ease;
 
     &--sale {
         color: #e60023;
     }
+}
+
+.catalog__toys-list-price:hover {
+    transform: scale(1.38);
 }
 
 .catalog__toys-list-sale {
@@ -148,6 +158,19 @@ h3 {
     left: 120px;
     transform: rotate(20deg);
 }
+.catalog__toys-list-sale:hover {
+    animation: rotate 1s linear forwards;
+        transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(390deg);
+    } }
 
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale {
@@ -159,7 +182,7 @@ h3 {
     .catalog__toys-list-sale {
         left: 160px;
         width: 130px;
-            height: 130px;
+        height: 130px;
     }
 }
 
@@ -170,6 +193,18 @@ h3 {
     top: 60px;
     left: 420px;
     transform: rotate(20deg);
+}
+
+.catalog__toys-list-sale-position-2:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(390deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -194,6 +229,20 @@ h3 {
     top: 60px;
     left: 700px;
     transform: rotate(20deg);
+}
+
+.catalog__toys-list-sale-position-3:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -221,6 +270,20 @@ h3 {
     transform: rotate(20deg);
 }
 
+.catalog__toys-list-sale-position-4:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-4 {
         left: 420px;
@@ -244,6 +307,20 @@ h3 {
     top: 480px;
     left: 140px;
     transform: rotate(20deg);
+}
+
+.catalog__toys-list-sale-position-5:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -271,6 +348,20 @@ h3 {
     transform: rotate(20deg);
 }
 
+.catalog__toys-list-sale-position-6:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-6 {
         left: 420px;
@@ -296,6 +387,20 @@ h3 {
     transform: rotate(20deg);
 }
 
+.catalog__toys-list-sale-position-7:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-7 {
         left: 140px;
@@ -310,6 +415,20 @@ h3 {
     top: 480px;
     left: 960px;
     transform: rotate(20deg);
+}
+
+.catalog__toys-list-sale-position-8:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -328,6 +447,20 @@ h3 {
     transform: rotate(20deg);
 }
 
+.catalog__toys-list-sale-position-9:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-9 {
         left: 140px;
@@ -342,6 +475,20 @@ h3 {
     top: 900px;
     left: 140px;
     transform: rotate(20deg);
+}
+
+.catalog__toys-list-sale-position-10:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -359,6 +506,21 @@ h3 {
     left: 680px;
     transform: rotate(20deg);
 }
+
+.catalog__toys-list-sale-position-11:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-11 {
         left: 420px;
@@ -373,6 +535,20 @@ h3 {
     top: 900px;
     left: 960px;
     transform: rotate(20deg);
+}
+
+.catalog__toys-list-sale-position-12:hover {
+    animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(390deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
