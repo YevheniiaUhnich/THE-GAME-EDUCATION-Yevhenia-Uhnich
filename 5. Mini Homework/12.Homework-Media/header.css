@@ -41,7 +41,13 @@ ul {
     font-size: 24px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1024px) {
+    .header__nav-content-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .header__nav-content {
         display: none;
     }
