@@ -48,6 +48,16 @@ h3 {
     }
 }
 
+.catalog__title {
+    font-size: 45px;
+    color: #e60023;
+    font-weight: 800;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: "Savate", sans-serif;
+
+}
+
 .catalog__toys-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -83,6 +93,8 @@ h3 {
     align-items: center;
     border: 2px solid black;
     border-radius: 10px;
+    background: #dff1f7;
+    background: linear-gradient(90deg, rgba(223, 241, 247, 1) 0%, rgb(171, 241, 200) 50%, rgba(237, 221, 83, 1) 100%);
 }
 
 @media screen and (max-width: 375px) {
@@ -94,21 +106,25 @@ h3 {
 
 .catalog__toys-image {
     width: 140px;
+    border-radius: 40px;
 }
 
 .catalog__toys-list-description {
     font-size: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    font-family: "Savate", sans-serif;
 }
 
 .catalog__toys-list-title {
+    font-family: "Savate", sans-serif;
     font-size: 22px;
     align-self: flex-start;
     margin-left: 20px;
 }
 
 .catalog__toys-list-price {
+    font-family: "Savate", sans-serif;
     font-size: 20px;
     color: red;
     font-weight: 800;
@@ -122,7 +138,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 120px;
     transform: rotate(20deg);
 }
@@ -130,14 +146,14 @@ h3 {
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale {
         left: 140px;
-        width: 130px;
-        height: 130px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .catalog__toys-list-sale {
         left: 160px;
+        width: 130px;
+            height: 130px;
     }
 }
 
@@ -145,7 +161,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 420px;
     transform: rotate(20deg);
 }
@@ -159,7 +175,7 @@ h3 {
 @media screen and (max-width: 375px) {
     .catalog__toys-list-sale-position-2 {
         left: 180px;
-        top: 410px;
+        top: 480px;
         width: 130px;
         height: 130px;
     }
@@ -169,7 +185,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 700px;
     transform: rotate(20deg);
 }
@@ -177,14 +193,14 @@ h3 {
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-3 {
         left: 140px;
-        top: 410px;
+        top: 470px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .catalog__toys-list-sale-position-3 {
         left: 180px;
-        top: 800px;
+        top: 880px;
         width: 130px;
         height: 130px;
     }
@@ -194,7 +210,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 980px;
     transform: rotate(20deg);
 }
@@ -202,14 +218,14 @@ h3 {
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-4 {
         left: 420px;
-        top: 410px;
+        top: 470px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .catalog__toys-list-sale-position-4 {
-        left: 160px;
-        top: 1210px;
+        left: 180px;
+        top: 1290px;
         width: 130px;
         height: 130px;
     }
@@ -219,7 +235,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 380px;
+    top: 480px;
     left: 140px;
     transform: rotate(20deg);
 }
@@ -227,14 +243,14 @@ h3 {
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-5 {
         left: 140px;
-        top: 780px;
+        top: 860px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .catalog__toys-list-sale-position-5 {
-        left: 160px;
-        top: 1610px;
+        left: 170px;
+        top: 1690px;
         width: 130px;
         height: 130px;
     }
@@ -244,7 +260,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 380px;
+    top: 480px;
     left: 420px;
     transform: rotate(20deg);
 }
@@ -252,14 +268,14 @@ h3 {
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-6 {
         left: 420px;
-        top: 780px;
+        top: 860px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .catalog__toys-list-sale-position-6 {
-        left: 160px;
-        top: 2020px;
+        left: 170px;
+        top: 2100px;
         width: 130px;
         height: 130px;
     }
@@ -269,7 +285,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 390px;
+    top: 480px;
     left: 690px;
     transform: rotate(20deg);
 }
@@ -277,7 +293,7 @@ h3 {
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-7 {
         left: 140px;
-        top: 1180px;
+        top: 1280px;
     }
 }
 
@@ -285,7 +301,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 390px;
+    top: 480px;
     left: 960px;
     transform: rotate(20deg);
 }
@@ -293,7 +309,7 @@ h3 {
 @media screen and (max-width: 768px) {
     .catalog__toys-list-sale-position-8 {
         left: 420px;
-        top: 1180px;
+        top: 1280px;
     }
 }
 
@@ -301,7 +317,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 800px;
+    top: 900px;
     left: 420px;
     transform: rotate(20deg);
 }
@@ -317,7 +333,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 780px;
+    top: 900px;
     left: 140px;
     transform: rotate(20deg);
 }
@@ -333,7 +349,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 800px;
+    top: 900px;
     left: 680px;
     transform: rotate(20deg);
 }
@@ -348,7 +364,7 @@ h3 {
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 800px;
+    top: 900px;
     left: 960px;
     transform: rotate(20deg);
 }
