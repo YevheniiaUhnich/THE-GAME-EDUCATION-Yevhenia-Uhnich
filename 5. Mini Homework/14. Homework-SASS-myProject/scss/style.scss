@@ -6,6 +6,21 @@ $h3-font-weight: 600;
 $h3-line-height: 1.4;
 $image-sale-width: 130px;
 $image-sale-height: 130px;
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == xs {
+        @media (max-width: $breakpoint-xs) {
+            @content;
+        }
+    }
+    @else if $breakpoint == sm {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        } 
+    }
+}
 
 body {
     font-family: $font-stack;
@@ -19,7 +34,15 @@ ul {
 .catalog__toys {
     background: rgb(228, 205, 205);
     padding: 0;
-    width: 1440px;
+    max-width: 1440px;
+
+    @include respond-to(sm) {
+        max-width: 768px;
+    }
+
+    @include respond-to(xs) {
+        max-width: 375px;
+    }
 
     &-cards {
         display: flex;
@@ -27,6 +50,14 @@ ul {
         width: 1224px;
         margin-left: auto;
         margin-right: auto;
+
+    @include respond-to(sm) {
+        width: 700px;
+    }
+
+    @include respond-to(xs) {
+        width: 320px;
+    }
     }
 
     &-title {
@@ -42,6 +73,15 @@ ul {
         grid-template-rows: repeat(4, 1fr);
         gap: 30px;
         padding: 0;
+
+    @include respond-to(sm) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    @include respond-to(xs) {
+        grid-template-columns: 1fr;
+    }
     }
 
     &-description {
@@ -55,6 +95,10 @@ ul {
         font-family: $font-stack;
         border-radius: 20px;
         position: relative;
+
+    @include respond-to(xs) {
+        width: 100%;
+    }
     }
 
     &-list-title {
