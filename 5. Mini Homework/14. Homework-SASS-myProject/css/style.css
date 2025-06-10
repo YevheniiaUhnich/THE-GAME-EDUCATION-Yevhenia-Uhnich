@@ -1,445 +1,96 @@
+body {
+  font-family: "Savate", sans-serif;
+  color: #0e0c0c;
+}
+
 ul {
   list-style: none;
+}
+
+.catalog__toys {
+  background: rgb(228, 205, 205);
   padding: 0;
-  margin: 0;
+  width: 1440px;
 }
-
-p,
-h1,
-h3 {
-  margin: 0;
+.catalog__toys-cards {
+  display: flex;
+  flex-direction: column;
+  width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
-}
-
-.catalog__title {
-  font-size: 45px;
-  color: #e60023;
-  font-weight: 800;
-  padding-bottom: 40px;
+.catalog__toys-title {
+  color: red;
+  font-size: 2rem;
+  font-weight: 700;
   text-align: center;
-  font-family: "Savate", sans-serif;
-}
-@media screen and (max-width: 375px) {
-  .catalog__title {
-    font-size: 30px;
-  }
-}
-.catalog__toys-card {
-  max-width: 1060px;
-  position: relative;
-  margin: 20px auto 0;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-card {
-    max-width: 540px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-card {
-    max-width: 310px;
-  }
 }
 .catalog__toys-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 40px;
-  align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 20px;
-    place-items: center;
-  }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0;
 }
 .catalog__toys-description {
-  width: 220px;
-  height: 360px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  border-radius: 10px;
-  background: linear-gradient(90deg, rgb(223, 241, 247) 0%, rgb(171, 241, 200) 50%, rgb(237, 221, 83) 100%);
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-description {
-    width: 260px;
-    height: 380px;
-  }
-}
-.catalog__toys-image {
-  width: 140px;
-  border-radius: 40px;
-  transition: transform 0.5s ease;
-}
-.catalog__toys-image:hover {
-  transform: scale(1.05);
-}
-.catalog__toys-list-description {
-  font-size: 10px;
-  margin: 0 10px;
+  width: 330px;
+  height: 580px;
+  background: rgb(190, 150, 150);
   font-family: "Savate", sans-serif;
+  border-radius: 20px;
+  position: relative;
 }
 .catalog__toys-list-title {
   font-family: "Savate", sans-serif;
-  font-size: 22px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #0e0c0c;
   align-self: flex-start;
   margin-left: 20px;
+  margin-top: 20px;
+}
+.catalog__toys-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.catalog__toys-list-description {
+  color: #0e0c0c;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 20px;
 }
 .catalog__toys-list-price {
-  font-family: "Savate", sans-serif;
-  font-size: 20px;
-  color: red;
-  font-weight: 800;
-  transition: transform 0.5s ease;
+  font-size: 1.3rem;
+  color: #0e0c0c;
+  font-weight: 700;
+  line-height: 1.4;
 }
 .catalog__toys-list-price--sale {
-  color: #e60023;
-}
-.catalog__toys-list-price:hover {
-  transform: scale(1.38);
+  color: red;
 }
 .catalog__toys-list-old-price {
+  color: #0e0c0c;
   text-decoration: line-through;
-  color: #999;
-  font-size: 0.9em;
-  margin-left: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .catalog__toys-description-hidden {
-    display: none;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .catalog__toys-description-hidden-mobile {
-    display: none;
-  }
-}
-.catalog__toys-list-sale-position-1 {
-  width: 110px;
-  height: 110px;
+.catalog__toys-image-sale {
+  width: 130px;
+  height: 130px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 200px;
   transform: rotate(20deg);
 }
-.catalog__toys-list-sale-position-1:hover {
+.catalog__toys-image-sale:hover {
   animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-1 {
-    left: 0px;
-    top: 0px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-1 {
-    left: 70px;
-    top: 0px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-2 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 105px;
-  left: 250px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-2:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-2 {
-    left: 280px;
-    top: 0px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-2 {
-    left: 70px;
-    top: 410px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-3 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 210px;
-  left: 500px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-3:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-3 {
-    left: 0px;
-    top: 400px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-3 {
-    left: 70px;
-    top: 820px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-4 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 315px;
-  left: 750px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-4:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-4 {
-    left: 280px;
-    top: 400px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-4 {
-    left: 70px;
-    top: 1230px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-5 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 420px;
-  left: 0px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-5:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-5 {
-    left: 0px;
-    top: 800px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-5 {
-    left: 70px;
-    top: 1640px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-6 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 525px;
-  left: 250px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-6:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-6 {
-    left: 280px;
-    top: 800px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-6 {
-    left: 70px;
-    top: 2050px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-7 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 630px;
-  left: 500px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-7:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-7 {
-    left: 0px;
-    top: 1200px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-7 {
-    left: 70px;
-    top: 2460px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-8 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 735px;
-  left: 750px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-8:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-8 {
-    left: 280px;
-    top: 1200px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-8 {
-    left: 70px;
-    top: 2870px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-9 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 840px;
-  left: 0px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-9:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-9 {
-    left: 0px;
-    top: 1600px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-9 {
-    left: 70px;
-    top: 3280px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-10 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 945px;
-  left: 250px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-10:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-10 {
-    left: 280px;
-    top: 1600px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-10 {
-    left: 70px;
-    top: 3690px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-11 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 1050px;
-  left: 500px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-11:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-11 {
-    left: 0px;
-    top: 2000px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-11 {
-    left: 70px;
-    top: 4100px;
-    width: 130px;
-    height: 130px;
-  }
-}
-.catalog__toys-list-sale-position-12 {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 1155px;
-  left: 750px;
-  transform: rotate(20deg);
-}
-.catalog__toys-list-sale-position-12:hover {
-  animation: rotate 1s linear forwards;
-}
-@media screen and (max-width: 768px) {
-  .catalog__toys-list-sale-position-12 {
-    left: 280px;
-    top: 2000px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .catalog__toys-list-sale-position-12 {
-    left: 70px;
-    top: 4510px;
-    width: 130px;
-    height: 130px;
-  }
 }
 
 @keyframes rotate {

@@ -1,180 +1,115 @@
-$main-color: #2ecc71;
-$font-stack: "Savate", sans-serif;
+$font-stack: 'Savate', sans-serif;
+$main-color: #0e0c0c;
+$card-bg: rgb(190, 150, 150);
+$h3-font-size: 1.3rem;
+$h3-font-weight: 600;
+$h3-line-height: 1.4;
+$image-sale-width: 130px;
+$image-sale-height: 130px;
+
+body {
+    font-family: $font-stack;
+    color: $main-color;
+}
 
 ul {
     list-style: none;
+}
+
+.catalog__toys {
+    background: rgb(228, 205, 205);
     padding: 0;
-    margin: 0;
-}
+    width: 1440px;
 
-p,
-h1,
-h3 {
-    margin: 0;
-}
-
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-    @media screen and (max-width: 768px) {
-        max-width: 768px;
-    }
-
-    @media screen and (max-width: 375px) {
-        max-width: 375px;
-    }
-}
-
-.catalog {
-    &__title {
-        font-size: 45px;
-        color: #e60023;
-        font-weight: 800;
-        padding-bottom: 40px;
-        text-align: center;
-        font-family: $font-stack;
-
-        @media screen and (max-width: 375px) {
-            font-size: 30px;
-        }
-    }
-
-    &__toys-card {
-        max-width: 1060px;
-        position: relative;
-        margin: 20px auto 0;
-
-        @media screen and (max-width: 768px) {
-            max-width: 540px;
-        }
-
-        @media screen and (max-width: 375px) {
-            max-width: 310px;
-        }
-    }
-
-    &__toys-list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 40px;
-        align-items: center;
-
-        @media screen and (max-width: 768px) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            gap: 30px;
-        }
-
-        @media screen and (max-width: 375px) {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            gap: 20px;
-            place-items: center;
-        }
-    }
-
-    &__toys-description {
-        width: 220px;
-        height: 360px;
+    &-cards {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        width: 1224px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-title {
+        color: red;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+        padding: 0;
+    }
+
+    &-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        border: 2px solid black;
-        border-radius: 10px;
-        background: linear-gradient(90deg, rgba(223, 241, 247, 1) 0%, rgb(171, 241, 200) 50%, rgba(237, 221, 83, 1) 100%);
-
-        @media screen and (max-width: 375px) {
-            width: 260px;
-            height: 380px;
-        }
-    }
-
-    &__toys-image {
-        width: 140px;
-        border-radius: 40px;
-        transition: transform 0.5s ease;
-
-        &:hover {
-            transform: scale(1.05);
-        }
-    }
-
-    &__toys-list-description {
-        font-size: 10px;
-        margin: 0 10px;
+        width: 330px;
+        height: 580px;
+        background: $card-bg;
         font-family: $font-stack;
+        border-radius: 20px;
+        position: relative;
     }
 
-    &__toys-list-title {
+    &-list-title {
         font-family: $font-stack;
-        font-size: 22px;
+        font-size: $h3-font-size;
+        font-weight: $h3-font-weight;
+        line-height: $h3-line-height;
+        color: $main-color;
         align-self: flex-start;
         margin-left: 20px;
+        margin-top: 20px;
     }
 
-    &__toys-list-price {
-        font-family: $font-stack;
-        font-size: 20px;
-        color: red;
-        font-weight: 800;
-        transition: transform 0.5s ease;
+    &-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
 
-        &--sale {
-            color: #e60023;
-        }
+    &-list-description {
+        color: $main-color;
+        font-size: 0.8rem;
+        font-weight: $h3-font-weight;
+        padding: 20px;
+    }
+
+    &-list-price {
+        font-size: $h3-font-size;
+        color: $main-color;
+        font-weight: 700;
+        line-height: $h3-line-height;
+    }
+
+    &-list-price--sale {
+        color: red;
+    }
+
+    &-list-old-price {
+        color: $main-color;
+        text-decoration: line-through;
+        font-size: $h3-font-size;
+        font-weight: 700;
+        margin-left: 30px;
+    }
+
+    &-image-sale {
+        width: $image-sale-width;
+        height: $image-sale-height;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        transform: rotate(20deg);
 
         &:hover {
-            transform: scale(1.38);
-        }
-    }
-
-    &__toys-list-old-price {
-        text-decoration: line-through;
-        color: #999;
-        font-size: 0.9em;
-        margin-left: 8px;
-    }
-
-    &__toys-description-hidden {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            display: none;
-        }
-    }
-
-    &__toys-description-hidden-mobile {
-        @media screen and (min-width: 320px) and (max-width: 767px) {
-            display: none;
-        }
-    }
-
-    @for $i from 1 through 12 {
-        &__toys-list-sale-position-#{$i} {
-            width: 110px;
-            height: 110px;
-            position: absolute;
-            top: ((($i - 1) / 4) * 420px);
-                left: ((($i - 1) % 4) * 250px);
-            transform: rotate(20deg);
-
-            &:hover {
-                animation: rotate 1s linear forwards;
-            }
-
-            @media screen and (max-width: 768px) {
-                left: if($i % 2==0, 280px, 0px);
-                top: (floor(($i - 1) / 2) * 400px);
-            }
-
-            @media screen and (max-width: 375px) {
-                left: 70px;
-                top: (($i - 1) * 410px);
-                width: 130px;
-                height: 130px;
-            }
+            animation: rotate 1s linear forwards;
         }
     }
 }
@@ -188,4 +123,3 @@ h3 {
         transform: rotate(390deg);
     }
 }
-
