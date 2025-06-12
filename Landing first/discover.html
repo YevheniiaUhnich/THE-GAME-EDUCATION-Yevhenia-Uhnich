@@ -6,31 +6,37 @@
     <title>Discover</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Landing first/style/styleDiscover.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+      <link rel="stylesheet" href="./css/style.css" />
+
   </head>
   <body>
     <header>
-      <nav class="header__nav">
-        <div class="header__logo">
-          <svg class="header__icon-storefront" width="32" height="32">
+      <nav class="header__nav container">
+        <div class="header__nav-block-logo">
+          <svg class="header__nav-icon-storefront" width="32" height="32">
             <use href="./icon/icons.svg#icon-Storefront"></use>
           </svg>
-          <svg class="header__icon-logo" width="200" height="20">
+          <svg class="header__nav-icon-logo" width="200" height="20">
             <use href="./icon/icons.svg#icon-NFT-Marketplace"></use>
           </svg>
         </div>
-        <div class="header__navigation">
-          <ul class="header__menu-list"">
-            <li class="header__menu-item">Marketplace</li>
-            <li class="header__menu-item">Rankings</li>
-            <li class="header__menu-item">Connect a wallet</li>
+        <div class="header__nav-navigation">
+          <ul class="header__nav-menu-list">
+            <li class="header__nav-menu-item">Marketplace</li>
+            <li class="header__nav-menu-item">Rankings</li>
+            <li class="header__nav-menu-item">Connect a wallet</li>
           </ul>
-          <button class="header__signup-btn">
-            <svg class="header__signup-icon" width="20" height="20">
+          <button class="button header__nav-signup-btn">
+            <svg class="header__nav-signup-icon" width="20" height="20">
               <use href="./icon/icons.svg#icon-User"></use>
             </svg>
             Sign Up
@@ -40,7 +46,7 @@
 
       <!-- Mobile menu -->
 
-      <div class="header__mobile">
+      <div class="mobile__menu">
         <div class="header__mobile-logo">
           <svg class="header__mobile-icon-storefront" width="24" height="24">
             <use href="./icon/icons.svg#icon-Storefront"></use>
@@ -60,18 +66,18 @@
 
       <!-- Hero section -->
 
-      <section className="hero">
+      <section className="hero container">
             <div class="hero__content">
-            <div class="hero__wrapper"> 
-            <div class="hero__tablet-wrapper"> 
-            <div class="hero__text-block"> 
-            <h1 class="hero__title">Discover Digital Art & Collect NFTs</h1>
-            <p class="hero__description">
+            <div class="hero__content-wrapper"> 
+            <div class="hero__content-tablet-wrapper"> 
+            <div class="hero__content-text-block"> 
+            <h1 class="hero__content-title">Discover Digital Art & Collect NFTs</h1>
+            <p class="hero__content-description">
               NFT marketplace UI created with Anima for Figma. Collect, buy and
               sell art from more than 20k NFT artists.
             </p>
             </div>
-          <div class="hero__image-block">
+          <div class="hero__content-image-block">
             
             <img
               srcset="
@@ -85,19 +91,19 @@
               size="(min-width: 1200px) 510px, (min-width: 768px) 330px, (min-width: 375px) 315px, (min-width: 320px) 315px, (max-width: 374px) 280px"
               src="./image/1x/ImageHeroMobile@1X.jpg"
               alt="Keemun-magic"
-              class="hero__image" />
-            <div class="hero__description-block">
-            <h3 class="hero__art-title">Space Walking</h3>
-            <div class="hero__author">
-              <div class="hero__avatar" role="img" aria-label="Avatar of Animakid">
+              class="hero__content-image" />
+            <div class="hero__content-frame">
+            <h3 class="hero__content-frame-title">Space Walking</h3>
+            <div class="hero__content-frame-author">
+              <div class="hero__content-frame-avatar" role="img" aria-label="Avatar of Animakid">
               <img src="./image/1x/Avatar 19.png" alt="animakid" />  
             </div>  
-            <h5 class="hero__author-name">Animakid</h5>
+            <h5 class="hero__content-frame-author-name">Animakid</h5>
             </div>
             </div>
             </div>
             </div>
-<button class="hero__button">
+            <button class="button hero__content-btn-start">
               <svg class="hero__button-icon" width="20" height="20">
                 <use href="./icon/icons.svg#icon-RocketLaunch"></use>
               </svg>
@@ -106,33 +112,33 @@
             </div>
             </div>
 
-           <div class="hero__stats">
-  <div class="hero__stat">
-    <div class="hero__stat-number">240k+</div>
-    <div class="hero__stat-label">Total Sale</div>
+           <div class="hero__content-stats">
+  <div class="hero__content-stat">
+    <div class="hero__content-stat-number">240k+</div>
+    <div class="hero__content-stat-label">Total Sale</div>
   </div>
-  <div class="hero__stat">
-    <div class="hero__stat-number">100k+</div>
-    <div class="hero__stat-label">Auctions</div>
+  <div class="hero__content-stat">
+    <div class="hero__content-stat-number">100k+</div>
+    <div class="hero__content-stat-label">Auctions</div>
   </div>
-  <div class="hero__stat">
-    <div class="hero__stat-number">240k+</div>
-    <div class="hero__stat-label">Artists</div>
+  <div class="hero__content-stat">
+    <div class="hero__content-stat-number">240k+</div>
+    <div class="hero__content-stat-label">Artists</div>
   </div>
 </div>
       </section>
 
     <!-- Trending Collection -->
 
-    <article class="trending">
-   <h2 class="trending__title">Trending Collection</h2>   
-  <p class="trending__subtitle">Checkout our weekly updated trending collection.</p>
+    <article class="trending__content container">
+   <h2 class="trending__content-title">Trending Collection</h2>   
+  <p class="trending__content-subtitle">Checkout our weekly updated trending collection.</p>
   
 
-  <div class="trending__list">
+  <div class="trending__content-list">
     <!-- Перша карточка -->
 
-    <div class="trending__card">
+    <div class="trending__content-card">
       <img 
         srcset="
           ./image/1x/PrimaryDesktop@1x.jpg  330w,
@@ -145,28 +151,28 @@
         sizes="(min-width: 1200px) 330px, (min-width: 768px) 315px, (max-width: 767px) 100vw"
         src="./image/1x/PrimaryMobile@1x.jpg"
         alt="Keemun-dog"
-        class="trending__image-main"
+        class="trending__content-image-main"
       />
 
-      <div class="trending__image-group">
-        <img src="./image/1x/Secondary.jpg" alt="Keemun-cat" />
-        <img src="./image/1x/SecondaryBear@1x.jpg" alt="Keemun-bear" />
-        <div class="trending__image-count">1025+</div>
+      <div class="trending__content-image-group">
+        <img class="trending__content-image-small" src="./image/1x/Secondary.jpg" alt="Keemun-cat" />
+        <img class="trending__content-image-small" src="./image/1x/SecondaryBear@1x.jpg" alt="Keemun-bear" />
+        <div class="trending__content-image-count">1025+</div>
       </div>
 
-      <h3 class="trending__collection-name">DSGN Animals</h3>
+      <h3 class="trending__content-collection-name">DSGN Animals</h3>
 
-      <div class="trending__author">
-        <div class="trending__author-avatar" role="img" aria-label="Avatar of Animakid">
+      <div class="trending__content-author">
+        <div class="trending__content-author-avatar" role="img" aria-label="Avatar of Animakid">
           <img src="./image/1x/Avatar 17.png" alt="MrFox" />
         </div>
-        <p class="trending__author-name">MrFox</p>
+        <p class="trending__content-author-name">MrFox</p>
       </div>
     </div>
 
 <!-- друга карточка -->
 
-        <div class="trending__card trending__card-hidden">
+        <div class="trending__content-card trending__card-hidden">
       <img 
         srcset="
           ./image/1x/graveDesktop@1x.jpg  330w,
@@ -177,28 +183,28 @@
         sizes="(min-width: 1200px) 330px, (min-width: 768px) 315px, (max-width: 767px) 100vw"
         src="./image/1x/graveTablet@1x.jpg"
         alt="Grave"
-         class="trending__image-main"
+        class="trending__content-image-main"
       />
 
-      <div class="trending__image-group">
-        <img src="./image/1x/graveTablet.jpg" alt="Grave" />
-        <img src="./image/1x/graveTablet1.jpg" alt="Grave" />
-        <div class="trending__image-count">1025+</div>
+      <div class="trending__content-image-group">
+        <img class="trending__content-image-small" src="./image/1x/graveTablet.jpg" alt="Grave" />
+        <img class="trending__content-image-small" src="./image/1x/graveTablet1.jpg" alt="Grave" />
+        <div class="trending__content-image-count">1025+</div>
       </div>
 
-      <h3 class="trending__collection-name">Magic Mushrooms</h3>
+      <h3 class="trending__content-collection-name">Magic Mushrooms</h3>
 
-      <div class="trending__author">
-        <div class="trending__author-avatar" role="img" aria-label="Avatar of Animakid">
+      <div class="trending__content-author">
+        <div class="trending__content-author-avatar" role="img" aria-label="Avatar of Animakid">
           <img src="./image/1x/Avatar 16.png" alt="Shroomie" />
         </div>
-        <p class="trending__author-name">Shroomie</p>
+        <p class="trending__content-author-name">Shroomie</p>
       </div>
     </div>
 
     <!-- треття карточка -->
 
-    <div class="trending__card trending__card-hidden trending__card-hidden-desktop">
+    <div class="trending__content-card trending__card-hidden trending__card-hidden-desktop">
       <img 
         srcset="
           ./image/1x/PrimaryPhotoPlaceholder5@1x.jpg  330w,
@@ -207,22 +213,22 @@
         sizes="(min-width: 1200px) 330px"
         src="./image/1x/PrimaryPhotoPlaceholder5@1x.jpg"
         alt="Skater"
-        class="trending__image-main"
+        class="trending__content-image-main"
       />
 
-      <div class="trending__image-group">
-        <img src="./image/1x/Secondary Photo Placeholder6.jpg" alt="Skater" />
-        <img src="./image/1x/Secondary Photo Placeholder7.jpg" alt="Skater" />
-        <div class="trending__image-count">1025+</div>
+      <div class="trending__content-image-group">
+        <img class="trending__content-image-small" src="./image/1x/Secondary Photo Placeholder6.jpg" alt="Skater" />
+        <img class="trending__content-image-small" src="./image/1x/Secondary Photo Placeholder7.jpg" alt="Skater" />
+        <div class="trending__content-image-count">1025+</div>
       </div>
 
-      <h3 class="trending__collection-name">Disco Machines</h3>
+      <h3 class="trending__content-collection-name">Disco Machines</h3>
 
-      <div class="trending__author">
-        <div class="trending__author-avatar" role="img" aria-label="Avatar of Animakid">
+      <div class="trending__content-author">
+        <div class="trending__content-author-avatar" role="img" aria-label="Avatar of Animakid">
           <img src="./image/1x/Avatar 18.png" alt="BeKind2Robots" />
         </div>
-        <p class="trending__author-name">BeKind2Robots</p>
+        <p class="trending__content-author-name">BeKind2Robots</p>
       </div>
     </div>
   </div>
@@ -230,117 +236,129 @@
 
     <!-- Top creators -->
 
-    <section class="creators">
-      <h2 class="creators__title">Top creators</h2>
-      <p class="creators__subtitle">Checkout Top Rated Creators on the NFT Marketplace</p>
-      <div class="creators__content">
-        <ul class="creators__list">
+    <section class="creators__content">
+      <h2 class="creators__content-title">Top creators</h2>
+      <p class="creators__content-subtitle">Checkout Top Rated Creators on the NFT Marketplace</p>
+      <div class="creators__content-block-list">
+        <ul class="creators__content-list">
 
            <!-- Картки творців -->
 
-          <li class="creators__item">
-            <img class="creators__avatar" src="./image/1x/Avatar 1.jpg" alt="Keepitreal"/>
-            <div class="creators__info">
-              <h3 class="creators__name">Keepitreal</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 1.jpg" alt="Keepitreal"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Keepitreal</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">1</div>
           </li>
 
-          <li class="creators__item">
-            <img class="creators__avatar" src="./image/1x/Avatar 2.jpg" alt="DigiLab"/>
-            <div class="creators__info">
-              <h3 class="creators__name">DigiLab</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 32.13 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 2.jpg" alt="DigiLab"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">DigiLab</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 32.13 ETH</span></p>
             </div>
+            <div class="creators__content-round">2</div>
           </li>
 
-          <li class="creators__item">
-            <img class="creators__avatar" src="./image/1x/Avatar 3.jpg" alt="GravityOne"/>
-            <div class="creators__info">
-              <h3 class="creators__name">GravityOne</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 28.93 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 3.jpg" alt="GravityOne"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">GravityOne</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 28.93 ETH</span></p>
             </div>
+            <div class="creators__content-round">3</div>
           </li>
 
-          <li class="creators__item">
-            <img class="creators__avatar" src="./image/1x/Avatar 4.jpg" alt="Juanie"/>
-            <div class="creators__info">
-              <h3 class="creators__name">Juanie</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 25.30 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 4.jpg" alt="Juanie"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Juanie</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 25.30 ETH</span></p>
             </div>
+            <div class="creators__content-round">4</div>
           </li>
 
-          <li class="creators__item">
-            <img class="creators__avatar" src="./image/1x/Avatar 5.jpg" alt="BlueWhale"/>
-            <div class="creators__info">
-              <h3 class="creators__name">BlueWhale</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 22.22 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 5.jpg" alt="BlueWhale"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">BlueWhale</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__amount"> 22.22 ETH</span></p>
             </div>
+            <div class="creators__content-round">5</div>
           </li>
 
 <!-- карткu для Tablet -->
 
-          <li class="creators__item creators__item--tablet">
-            <img class="creators__avatar" src="./image/1x/Avatar 6.jpg" alt="GravityOne"/>
-            <div class="creators__info">
-              <h3 class="creators__name">Mr Fox</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+          <li class="creators__content-item creators__item--tablet">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 6.jpg" alt="GravityOne"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Mr Fox</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">6</div>
           </li>
 
      <!-- карткu для desktop -->
 
-               <li class="creators__item creators__item--desktop">
-            <img class="creators__avatar" src="./image/1x/Avatar 7.jpg" alt="robotica" />
-            <div class="creators__info">
-              <h3 class="creators__name">Shroomie</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+               <li class="creators__content-item creators__item--desktop">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 7.jpg" alt="robotica" />
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Shroomie</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">7</div>
           </li>
 
-          <li class="creators__item creatorsSeparDesktop">
-            <img class="creators__avatar" src="./image/1x/Avatar 8.jpg" alt="Robotica"/>
-            <div class="creators__info">
-              <h3 class="creators__name">Robotica</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 8.jpg" alt="Robotica"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Robotica</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">8</div>
           </li>
 
-          <li class="creators__item creatorsSeparDesktop">
-            <img class="creators__avatar" src="./image/1x/Avatar 9.jpg" alt="RustyRobot"/>
-            <div class="creators__info">
-              <h3 class="creators__name">RustyRobot</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 9.jpg" alt="RustyRobot"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">RustyRobot</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">9</div>
           </li>
 
-          <li class="creators__item creatorsSeparDesktop">
-            <img class="creators__avatar" src="./image/1x/Avatar 10.jpg" alt="Animakid"/>
-            <div class="creators__info">
-              <h3 class="creators__name">Animakid</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 10.jpg" alt="Animakid"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Animakid</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">10</div>
           </li>
 
-          <li class="creators__item creatorsSeparDesktop">
-            <img class="creators__avatar" src="./image/1x/Avatar 11.jpg" alt="Dotgu"/>
-            <div class="creators__info">
-              <h3 class="creators__name">Dotgu</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 11.jpg" alt="Dotgu"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Dotgu</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">11</div>
           </li>
 
-          <li class="creators__item creatorsSeparDesktop">
-            <img class="creators__avatar" src="./image/1x/Avatar 12.jpg" alt="Ghiblier"/>
-            <div class="creators__info">
-              <h3 class="creators__name">Ghiblier</h3>
-              <p class="creators__sales">Total Sales: <span class="creators__amount"> 34.53 ETH</span></p>
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 12.jpg" alt="Ghiblier"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Ghiblier</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__acontent-mount"> 34.53 ETH</span></p>
             </div>
+            <div class="creators__content-round">12</div>
           </li>
         </ul>
 
-        <button class="creators__button">
-          <svg class="creators__icon" width="20" height="20">
+        <button class="button creators__content-btn-rankings">
+          <svg class="creators__content-icon" width="20" height="20">
             <use href="./icon/icons.svg#icon-RocketLaunch"></use>
           </svg>
           View Rankings
@@ -350,118 +368,119 @@
 
     <!-- Browse Categories -->
 
-    <article>
-      <h2 class="titleBrowse">Browse Categories</h2>
-      <ul class="listBrowse">
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 1.jpg" alt="Dall"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+    <article class="category__content">
+      <h2 class="category__content-title">Browse Categories</h2>
+      <ul class="category__content-list">
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 1.jpg" alt="Dall"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-PaintBrush"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Art</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Art</h4>
           </div>
         </li>
 
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 2.jpg" alt="Portrait"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 2.jpg" alt="Portrait"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-Swatches"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Collectibles</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Collectibles</h4>
           </div>
         </li>
 
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 3.jpg" alt="Music"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 3.jpg" alt="Music"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-MusicNotes"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Music</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Music</h4>
           </div>
         </li>
 
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 4.jpg" alt="Camera"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 4.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-Camera"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Photography</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Photography</h4>
           </div>
         </li>
 
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 5.jpg" alt="Camera"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 5.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-VideoCamera"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Video</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Video</h4>
           </div>
         </li>
 
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 6.jpg" alt="Camera"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 6.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-MagicWand"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Utility</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Utility</h4>
           </div>
         </li>
 
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 7.jpg" alt="Camera"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 7.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-Basketball"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Sport</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Sport</h4>
           </div>
         </li>
 
-        <li class="listBrowseParse">
-          <div class="image-wrapper">
-            <img src="./image/1x/Image 8.jpg" alt="Camera"/>
-            <div class="blur-layer">
-          <svg class="iconBrowse" width="80" height="80">
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 8.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
             <use href="./icon/icons.svg#icon-Planet"></use>
           </svg>
           </div>
           </div>
-          <div class="art">
-            <h4 class="titleArt">Virtual Worlds</h4>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Virtual Worlds</h4>
           </div>
         </li>
 
@@ -471,14 +490,15 @@
     <!-- Discover More NFTs -->
 
 
-   <section class="blockDiscover">
-  <h2 class="titleDiscover">Discover More NFTs</h2>
-  <h4 class="miniTitle">Explore new trending NFTs</h4>
-  <ul class="blockTrending">
+   <section class="discover__content">
+  <h2 class="discover__content-title">Discover More NFTs</h2>
+  <h4 class="discover__content-subtitle">Explore new trending NFTs</h4>
+  <ul class="discover__content-list">
 
-    <li class="listTrending">
-      <div class="trendingCard">
+    <li class="discover__content-item">
+      <div class="discover__content-card">
         <img 
+          class="discover__content-card-image"
           srcset="
             ./image/1x/Image9Desktop@1x.jpg  420w,
             ./image/2x/Image9Desktop@2x.jpg 840w,
@@ -492,30 +512,31 @@
           alt="Keemun magic futuristic"
         />
 
-        <div class="blockInfo">
-          <h3 class="titleTrending">Distant Galaxy</h3>
-          <div class="blockAvatarTrending">
-            <div class="avatarTrending" role="img" aria-label="Avatar of MoonDancer">
-              <img src="./image/1x/Avatar 13.png" alt="MoonDancer" />
+        <div class="discover__content-block-info">
+          <h3 class="discover__content-title-card">Distant Galaxy</h3>
+          <div class="discover__content-block-info-avatar">
+            <div class="discover__content-block-avatar" role="img" aria-label="Avatar of MoonDancer">
+              <img class="discover__content-avatar" src="./image/1x/Avatar 13.png" alt="MoonDancer" />
             </div>
-            <h3 class="titleMoonDanser">MoonDancer</h3>
+            <h3 class="discover__content-title-avatar">MoonDancer</h3>
               </div>
-              <div class="infoTrending">
-              <p class="priceMoonDanser">Price</p>
-              <p class="moonDanserBid">Highest Bid</p>
+              <div class="discover__content-block-price">
+              <p class="discover__content-price">Price</p>
+              <p class="discover__content-price">Highest Bid</p>
               </div>
-               <div class="infoTrendingPrice">
-              <p class="priceMoonDanserNumber">1.63 ETH</p>
-              <p class="moonDanserBidNumber">0.33 wETH</p>
+               <div class="discover__content-block-price">
+              <p class="discover__content-number">1.63 ETH</p>
+              <p class="discover__content-number">0.33 wETH</p>
             </div>
              </div>
           </div>
       </div>
     </li>
 
-     <li class="listTrending">
-      <div class="trendingCard">
+     <li class="discover__content-item">
+      <div class="discover__content-card">
         <img 
+          class="discover__content-card-image"
           srcset="
             ./image/1x/Image10desktop@1x.jpg  420w,
             ./image/2x/Image10desktop@2x.jpg 840w,
@@ -529,30 +550,31 @@
           alt="Keemun magic floating"
         />
 
-        <div class="blockInfo">
-          <h3 class="titleTrending">Life on Edena</h3>
-          <div class="blockAvatarTrending">
-            <div class="avatarTrending" role="img" aria-label="Avatar of MoonDancer">
-              <img src="./image/1x/Avatar 14.png" alt="NebulaKid" />
+        <div class="discover__content-block-info">
+          <h3 class="discover__content-title-card">Life on Edena</h3>
+          <div class="discover__content-block-info-avatar">
+            <div class="discover__content-block-avatar" role="img" aria-label="Avatar of MoonDancer">
+              <img class="discover__content-avatar" src="./image/1x/Avatar 14.png" alt="NebulaKid" />
             </div>
-            <h3 class="titleMoonDanser">NebulaKid</h3>
+            <h3 class="discover__content-title-avatar">NebulaKid</h3>
               </div>
-              <div class="infoTrending">
-              <p class="priceMoonDanser">Price</p>
-              <p class="moonDanserBid">Highest Bid</p>
+              <div class="discover__content-block-price">
+              <p class="discover__content-price">Price</p>
+              <p class="discover__content-price">Highest Bid</p>
               </div>
-               <div class="infoTrendingPrice">
-              <p class="priceMoonDanserNumber">1.63 ETH</p>
-              <p class="moonDanserBidNumber">0.33 wETH</p>
+               <div class="discover__content-block-price">
+              <p class="discover__content-number">1.63 ETH</p>
+              <p class="discover__content-number">0.33 wETH</p>
             </div>
              </div>
           </div>
       </div>
     </li>
 
-    <li class="listTrending listTrendingTablet">
-      <div class="trendingCard">
+    <li class="discover__content-item">
+      <div class="discover__content-card">
         <img 
+          class="discover__content-card-image"
           srcset="
             ./image/1x/Image11desktop@1x.jpg  420w,
             ./image/2x/Image11desktop@2x.jpg 840w,
@@ -564,21 +586,21 @@
           alt="AstroFiction"
         />
 
-        <div class="blockInfo">
-          <h3 class="titleTrending">AstroFiction</h3>
-          <div class="blockAvatarTrending">
-            <div class="avatarTrending" role="img" aria-label="Avatar of MoonDancer">
-              <img src="./image/1x/Avatar 15.png" alt="Spaceone" />
+        <div class="discover__content-block-info">
+          <h3 class="discover__content-title-card">AstroFiction</h3>
+          <div class="discover__content-block-info-avatar">
+            <div class="discover__content-block-avatar" role="img" aria-label="Avatar of MoonDancer">
+              <img class="discover__content-avatar" src="./image/1x/Avatar 15.png" alt="Spaceone" />
             </div>
-            <h3 class="titleMoonDanser">Spaceone</h3>
+            <h3 class="discover__content-title-avatar">Spaceone</h3>
               </div>
-              <div class="infoTrending">
-              <p class="priceMoonDanser">Price</p>
-              <p class="moonDanserBid">Highest Bid</p>
+              <div class="discover__content-block-price">
+              <p class="discover__content-price">Price</p>
+              <p class="discover__content-price">Highest Bid</p>
               </div>
-               <div class="infoTrendingPrice">
-              <p class="priceMoonDanserNumber">1.63 ETH</p>
-              <p class="moonDanserBidNumber">0.33 wETH</p>
+               <div class="discover__content-block-price">
+              <p class="discover__content-number">1.63 ETH</p>
+              <p class="discover__content-number">0.33 wETH</p>
             </div>
              </div>
           </div>
@@ -586,7 +608,7 @@
     </li>
   </ul>
 
-  <button class="btnTrending">
+  <button class="button discover__content-btn-see-all">
     <svg class="iconButton" width="20" height="20">
       <use href="./icon/icons.svg#icon-Eye"></use>
     </svg>
@@ -597,35 +619,35 @@
 <!-- Magic Mashrooms -->
 
 
-<article class="blockBackground">
-  <div class="blockMagic">
-    <div class="avatarMagic" role="img" aria-label="Avatar of MoonDancer">
+<article class="highlight__content">
+  <div class="highlight__content-block-magic">
+    <div class="highlight__content-avatar" role="img" aria-label="Avatar of MoonDancer">
               <img src="./image/1x/Avatar 16.png" alt="Shroomie" />
             </div>
-    <p class="titleShroomie">Shroomie</p>
+    <p class="highlight__content-subtitle">Shroomie</p>
     </div>
-    <h2 class="titleMagic">Magic Mashrooms</h2>
+    <h2 class="highlight__content-title">Magic Mashrooms</h2>
 
-    <div class="timer">
-      <p class="titleAuction">Auction ends in:</p>
-      <div class="boxText">
-      <div>
-        <p class="numberAuction">59:</p>
-        <p class="textAuction">Hours</p>
+    <div class="highlight__content-timer">
+      <p class="highlight__content-title-auction">Auction ends in:</p>
+      <div class="highlight__content-block-text">
+        <div class="highlight__content-timer-block">
+          <p class="highlight__content-time">59:</p>
+          <p class="highlight__content-label">Hours</p>
+        </div>
+        <div class="highlight__content-timer-block">
+          <p class="highlight__content-time">59:</p>
+          <p class="highlight__content-label">Minutes</p>
+        </div>
+        <div class="highlight__content-timer-block">
+          <p class="highlight__content-time">59</p>
+          <p class="highlight__content-label">Seconds</p>
+        </div>
       </div>
-      <div>
-        <p class="numberAuction">59:</p>
-        <p class="textAuction textActionOne">Minutes</p>
       </div>
-      <div>
-         <p class="numberAuction">59:</p>
-        <p class="textAuction textAuctionTwo">Seconds</p>
-      </div>
-      </div>
-    </div>
 
-      <button class="btnMagic">
-        <svg class="iconButton" width="20" height="20">
+      <button class="button highlight__content-btn-NFT">
+        <svg class="highlight__content-icon-btn" width="20" height="20">
       <use href="./icon/icons.svg#icon-Eye"></use>
     </svg>
         See NFT

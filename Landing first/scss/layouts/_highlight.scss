@@ -1,0 +1,124 @@
+.highlight__content {
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(162, 89, 255, 1) 0%, rgba(162, 89, 255, 0) 54%, rgba(162, 89, 255, 1) 100%),
+            url(../image/1x/grib.png);
+    height: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%; // або скільки потрібно
+            background: linear-gradient(to top,
+                    rgba(162, 89, 255, 0.8),
+                    rgba(162, 89, 255, 0));
+            pointer-events: none;   }
+        
+    &-block-magic {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-left: 120px;
+        margin-top: 360px;
+        background: $bg-card;
+        border-radius: $border-radius;
+        width: 151px;
+        height: 44px;
+    } 
+
+    &-subtitle {
+        font-family: $font-primary;
+        color: $color-body;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &-title {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 51px;
+        font-weight: 600px;
+        line-height: 1.1;
+        margin-left: 120px;
+        margin-top: 40px;
+    }
+
+    &-btn-NFT {
+        width: 198px;
+        height: 60px;
+        background: $color-body;
+        color: rgba(43, 43, 43, 1);
+        position: absolute;
+        top: 540px;
+        left: 120px;
+    }
+
+    &-icon-btn {
+        fill: $color-button;
+    }
+
+    &-timer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 295px;
+        height: 144px;
+        background: rgba(59, 59, 59, 0.5);
+        backdrop-filter: blur(10px);
+        border-radius: $border-radius;
+        position: absolute;
+        top: 450px;
+        right: 180px;
+    }
+
+    &-title-auction {
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.1;
+        color: $color-body;
+        margin-left: 46px;
+    }
+
+    &-block-text {
+        display: flex;
+        gap: 20px; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-timer-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+
+    &-time {
+        color: $color-body;
+        font-family: $font-primary;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &-label {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.1;
+        color: $color-body;
+        font-family: $font-primary;
+        margin-top: 5px;     
+    }
+
+
+}

@@ -1,0 +1,15 @@
+.button {
+    background: $color-button;
+    color: $color-body;
+    border-radius: $border-radius;
+    fill: $color-body;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    border: 2px solid rgba(162, 89, 255, 1);
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    }
