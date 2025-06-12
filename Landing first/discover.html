@@ -657,32 +657,33 @@
 
 <!-- How it works -->
 
-<section>
-  <h3 class="titleWorks">How it works</h3>
-  <p class="textWorks">Find out how to get started</p>
+<section class="works__content">
+  <h3 class="works__content-title">How it works</h3>
+  <p class="works__content-subtitle">Find out how to get started</p>
 
-  <ul class="BlockWorks">
-    <li class="BlockCard">
-      <img src="./image/1x/pay.png" alt="pay"/>
-      <div class="blockTextWorks">
-      <h4 class="titleTextBlock">Setup Your wallet</h4>
-      <p class="textBlockText">Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
+  <ul class="works__content-block-works">
+
+    <li class="works__content-card">
+      <img class="works__content-image" src="./image/1x/pay.png" alt="pay"/>
+      <div class="works__content-block-text">
+      <h4 class="works__content-text">Setup Your wallet</h4>
+      <p class="works__content-description">Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
       </div>
     </li>
 
-    <li class="BlockCard">
-      <img src="./image/1x/media.png" alt="media"/>
-      <div class="blockTextWorks">
-      <h4 class="titleTextBlock">Create Collectiont</h4>
-      <p class="textBlockText">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+    <li class="works__content-card">
+      <img class="works__content-image" src="./image/1x/media.png" alt="media"/>
+      <div class="works__content-block-text">
+      <h4 class="works__content-text">Create Collectiont</h4>
+      <p class="works__content-description"">Upload your work and setup your collection. Add a description, social links and floor price.</p>
       </div>
     </li>
 
-    <li class="BlockCard">
-      <img src="./image/1x/buy.png" alt="buy"/>
-      <div class="blockTextWorks">
-      <h4 class="titleTextBlock">Start Earning</h4>
-      <p class="textBlockText">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+    <li class="works__content-card">
+      <img class="works__content-image" src="./image/1x/buy.png" alt="buy"/>
+      <div class="works__content-block-text">
+      <h4 class="works__content-text">Start Earning</h4>
+      <p class="works__content-description">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
       </div>
     </li>
   </ul>
@@ -690,9 +691,10 @@
 
 <!-- Join our weekly -->
 
-<article class="astronaut">
-  <div class="blockAstronaut">
+<article class="subscribe__content">
+  <div class="subscribe__content-block-image">
   <img 
+  class="subscribe__content-image"
           srcset="
             ./image/1x/astronautDesktop@1x.jpg  425w,
             ./image/1x/astronautDesktop@1x.jpg 850w,
@@ -705,46 +707,20 @@
           src="./image/2x/astronautMobile@2x.jpg"
           alt="Astronaut"
         />
-  <h2 class="titleAstronaut">Join our weekly<br> digest</h2>
-  <p class="textAstronaut">Get exclusive promotions & updates<br> straight to your inbox.</p>
-  <button class="btnAdress">Enter Your Email Address</button>
-  <button class="btnSubscribe">
-    <svg class="iconButtonLetter" width="20" height="20">
-      <use href="./icon/icons.svg#icon-EnvelopeSimple"></use>
-    </svg>
-    Subscribe
-  </button>
-  </div>
-</article>
-
-<!-- tablet Join our weekly -->
-
-<article class="astronautTablet">
-  <div class="blockAstronautTablet">
-  <img 
-          srcset="
-            ./image/1x/astronautDesktop@1x.jpg  425w,
-            ./image/1x/astronautDesktop@1x.jpg 850w,
-            ./image/1x/astronautTablet@1x.jpg 300w,
-            ./image/2x/astronautTablet@2x.jpg 600w,
-            ./image/1x/astronautMobile@1x.jpg 315w,
-            ./image/2x/astronautMobile@2x.jpg  630w
-          "
-          sizes="(min-width: 1200px) 425px, (min-width: 768px) 330px, 100vw"
-          src="./image/2x/astronautMobile@2x.jpg"
-          alt="Astronaut"
-        />
-        <div class="blockTextTablet">
-  <h2 class="titleAstronaut">Join our weekly Digest</h2>
-  <p class="textAstronaut">Get exclusive promotions & updates<br> straight to your inbox.</p>
-  <button class="btnAdress">Enter Your Email Address</button>
-  <button class="btnSubscribe">
-    <svg class="iconButtonLetter" width="20" height="20">
-      <use href="./icon/icons.svg#icon-EnvelopeSimple"></use>
-    </svg>
-    Subscribe
-  </button>
-  </div>
+  <div class="subscribe__content-block-about">
+  <h2 class="subscribe__content-title">Join our weekly<br> digest</h2>
+  <p class="subscribe__content-subtitle">Get exclusive promotions & updates<br> straight to your inbox.</p>
+  
+  <div class="subscribe__content-block-button">
+    <button class="button subscribe__content-btn-address">Enter your email here</button>
+    <button class="button subscribe__content-btn-subscribe">
+      <svg class="subscribe__content-icon" width="20" height="20">
+        <use href="./icon/icons.svg#icon-EnvelopeSimple"></use>
+      </svg>
+      Subscribe
+    </button>
+    </div>
+</div>
   </div>
 </article>
 
