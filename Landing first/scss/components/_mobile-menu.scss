@@ -1,0 +1,7 @@
+.mobile__menu {
+    display: none;
+
+    @include respond-to(xs) {
+        display: block;
+    }
+}

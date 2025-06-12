@@ -1,0 +1,118 @@
+.discover__content {
+    width: 100%;
+    height: 780px;
+    margin-top: 180px;
+    position: relative;
+
+    &-title {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-left: 80px;
+    }
+
+    &-subtitle {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-left: 80px;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 60px;
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-item {
+        width: 420px;
+        height: 296px;
+    }
+
+    &-card-image {
+        width: 420px;
+        height: 296px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        display: block;
+    }
+
+    &-block-info {
+        width: 420px;
+        height: 173px;
+        background: $bg-card;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    &-title-card {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.4;
+        padding: 20px;
+    }
+
+    &-block-info-avatar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 20px;
+        gap: 12px;
+    }
+
+    &-title-avatar {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        
+    }
+
+    &-block-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+
+    &-price {
+        font-family: $font-primary;
+        color: rgba(133, 133, 132, 1);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+
+    &-number {
+        font-family: $font-primary;
+        color: $color-body;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &-btn-see-all {
+        width: 187px;
+        height: 60px;
+        background: transparent;
+        position: absolute;
+        top: 10px;
+        right: 70px;
+    }
+}

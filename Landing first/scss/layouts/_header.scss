@@ -1,0 +1,51 @@
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-block-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-icon-storefront {
+        fill: rgba(162, 89, 255, 1);
+    }
+
+    &-icon-logo {
+        fill: $color-body;
+    }
+
+        &-navigation {
+            display: flex; 
+            align-items: center;
+            gap: 40px;
+    }
+
+    &-menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 607px;
+        height: 60px;
+        gap: 40px;
+    }
+
+    &-menu-item {
+        color: $color-body;
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &-signup-btn {
+        width: 152px;
+        height: 60px;
+    }
+}

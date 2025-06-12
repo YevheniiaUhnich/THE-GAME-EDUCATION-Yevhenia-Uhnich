@@ -1,0 +1,115 @@
+.hero__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+
+   &-tablet-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+   }
+
+   &-text-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   }
+
+   &-title {
+    color: $color-body;
+    font-family: $font-primary;
+    font-size: 67px;
+    font-weight: 600;
+    width: 510px;
+   }
+
+   &-description {
+    color: $color-body;
+    font-family: $font-primary;
+    font-size: 22px;
+    font-weight: 400px;
+    width: 510px;
+    margin-top: 20px;
+   }
+
+   &-image {
+    width: 510px;
+    height: 401px;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   }
+
+   &-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 510px;
+    height: 109px;
+    background: $bg-card;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   }
+
+   &-frame-title {
+    color: $color-body;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: $font-primary;
+    padding-left: 20px;
+   }
+
+   &-frame-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+   }
+
+   &-frame-author-name {
+    font-family: $font-primary;
+    color: $color-body;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+   }
+
+   &-btn-start {
+    width: 224px;
+    height: 60px;
+    position: absolute;
+    top: 540px;
+   }
+
+   &-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    width: 510px;
+    color: $color-body;
+    font-family: $font-secondary;
+    position: absolute;
+    top: 620px;
+    left: 210px;
+   }
+
+   &-stat-number {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+   }
+
+   &-stat-label {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+   }
+}

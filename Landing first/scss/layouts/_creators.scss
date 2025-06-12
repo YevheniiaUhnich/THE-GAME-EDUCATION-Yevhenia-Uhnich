@@ -1,0 +1,109 @@
+.creators__content {
+    width: 100%;
+    margin-top: 160px;
+    position: relative;
+
+    &-title {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-left: 190px;
+    }
+
+    &-subtitle {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-left: 190px;
+    }
+
+    &-list {
+        width: 1050px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    &-item {
+        width: 240px;
+        height: 238px;
+        background: $bg-card;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &-avatar {
+        border-radius: 50%;
+        width: 110px;
+        height: 120px;
+    }
+
+    &-name {
+        font-family: $font-primary;
+        color: $color-body;
+        margin-top: 16px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    &-sales {
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        color: rgba(133, 133, 132, 1);
+    }
+
+    &-amount {
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        color: $color-body;
+    }
+
+    &-round {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background: rgba(43, 43, 43, 1);
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        color: rgba(133, 133, 132, 1);
+        font-family: $font-primary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    &-btn-rankings {
+        background: transparent;
+        width: 247px;
+        height: 60px;
+        position: absolute;
+        top: 16px;
+        left: 990px;
+    }
+
+    &-icon {
+        fill: $color-button;
+    }
+}
