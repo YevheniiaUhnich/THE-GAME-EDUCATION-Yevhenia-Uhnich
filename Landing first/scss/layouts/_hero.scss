@@ -1,9 +1,17 @@
 .hero__content {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
+
+    @include respond-to(sm) {
+            width: 690px;
+            height: 381px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
    &-tablet-wrapper {
     display: flex;
@@ -24,6 +32,11 @@
     font-size: 67px;
     font-weight: 600;
     width: 510px;
+
+    @include respond-to(sm) {
+        font-size: 38px;
+        width: 330px;
+    }
    }
 
    &-description {
@@ -33,7 +46,12 @@
     font-weight: 400px;
     width: 510px;
     margin-top: 20px;
+
+    @include respond-to(sm) {
+            font-size: 16px;
+            width: 330px;
    }
+}
 
    &-image {
     width: 510px;
@@ -41,6 +59,11 @@
     display: block;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    @include respond-to(sm) {
+        width: 330px;
+        height: 221px;
+    }
    }
 
    &-frame {
@@ -53,6 +76,11 @@
     background: $bg-card;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    @include respond-to(sm) {
+            width: 330px;
+            height: 109px;
+        }
    }
 
    &-frame-title {
@@ -85,7 +113,11 @@
     width: 224px;
     height: 60px;
     position: absolute;
-    top: 540px;
+    top: 580px;
+
+    @include respond-to(sm) {
+        top: 460px;
+    }
    }
 
    &-stats {
@@ -97,19 +129,35 @@
     color: $color-body;
     font-family: $font-secondary;
     position: absolute;
-    top: 620px;
+    top: 660px;
     left: 210px;
+
+    @include respond-to(sm) {
+        width: 330px;
+        top: 540px;
+        left: 40px;
+    }
    }
 
    &-stat-number {
     font-size: 28px;
     font-weight: 700;
     line-height: 1.4;
+
+    @include respond-to(sm) {
+        font-size: 22px;
+        line-height: 1.6;
+    }
    }
 
    &-stat-label {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.6;
+
+    @include respond-to(sm) {
+            font-size: 16px;
+            line-height: 1.4;
+        }
    }
 }
