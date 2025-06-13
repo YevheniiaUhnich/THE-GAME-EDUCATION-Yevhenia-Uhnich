@@ -53,6 +53,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 40px;
 }
 .header__nav-block-logo {
   display: flex;
@@ -766,6 +767,7 @@ body {
   font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
+  padding-bottom: 10px;
 }
 .subscribe__content-subtitle {
   font-family: "Work Sans", sans-serif;
@@ -773,7 +775,8 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.6;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 .subscribe__content-block-button {
   display: flex;
@@ -790,6 +793,9 @@ body {
   justify-content: flex-start;
   color: rgb(43, 43, 43);
   cursor: text;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(43, 43, 43);
 }
 .subscribe__content-btn-subscribe {
   padding: 14px 20px;
@@ -797,8 +803,153 @@ body {
   position: absolute;
   height: 61px;
   width: 211px;
-  top: 171px;
-  left: 220px;
+  top: 251px;
+  left: 219px;
+}
+
+.footer__content {
+  width: 100%;
+  height: 334px;
+  margin-top: 80px;
+  background: rgb(59, 59, 59);
+}
+.footer__content-block-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+  width: 988px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+.footer__content-block-logo {
+  width: 327px;
+}
+.footer__content-icon {
+  fill: rgb(162, 89, 255);
+}
+.footer__content-icon-logo {
+  fill: rgb(255, 255, 255);
+}
+.footer__content-text {
+  color: rgb(204, 204, 204);
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  width: 238px;
+  height: 44px;
+  margin-top: 20px;
+}
+.footer__content-community {
+  color: rgb(204, 204, 204);
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.footer__content-icon-cocial {
+  margin-top: 20px;
+}
+.footer__content-icon-discord {
+  fill: rgb(133, 133, 132);
+}
+.footer__content-icon-youtube {
+  fill: rgb(133, 133, 132);
+}
+.footer__content-icon-instagram {
+  fill: rgb(133, 133, 132);
+}
+.footer__content-text-explore {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.footer__content-text-marketplace {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.footer__content-text-rankings {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.footer__content-text-connect {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.footer__content-block-join {
+  position: relative;
+}
+.footer__content-title-join {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.footer__content-text-promotions {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.footer__content-btn-enter {
+  width: 425px;
+  height: 60px;
+  padding: 14px 24px;
+  background-color: white;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(43, 43, 43);
+  cursor: text;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(43, 43, 43);
+}
+.footer__content-btn-subscribe {
+  padding: 14px 20px;
+  background-color: rgb(162, 89, 255);
+  position: absolute;
+  height: 61px;
+  width: 211px;
+  top: 120px;
+  left: 219px;
+}
+.footer__content-custom-line {
+  width: 1049px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.footer__content-market {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.1;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(133, 133, 132);
+  margin-left: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
