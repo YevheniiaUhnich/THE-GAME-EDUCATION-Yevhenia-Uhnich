@@ -47,17 +47,17 @@
       <!-- Mobile menu -->
 
       <div class="mobile__menu">
-        <div class="header__mobile-logo">
-          <svg class="header__mobile-icon-storefront" width="24" height="24">
+        <div class="mobile__menu-logo">
+          <svg class="mobile__menu-icon-storefront" width="24" height="24">
             <use href="./icon/icons.svg#icon-Storefront"></use>
           </svg>
-          <svg class="header__mobile-icon-logo" width="149" height="15">
+          <svg class="mobile__menu-icon-logo" width="149" height="15">
             <use href="./icon/icons.svg#icon-NFT-Marketplace"></use>
           </svg>
         </div>
-        <div class="header__mobile-burger">
-          <svg class="header__burger-icon" width="24" height="24">
-            <use href="./icon/icons.svg#icon-Burger-Menu""></use>
+        <div class="mobile__menu-burger">
+          <svg class="mobile__menu-burger-icon" width="24" height="24">
+            <use href="./icon/icons.svg#icon-Burger-Menu"></use>
           </svg>
         </div>
       </div>
@@ -157,7 +157,8 @@
       <div class="trending__content-image-group">
         <img class="trending__content-image-small" src="./image/1x/Secondary.jpg" alt="Keemun-cat" />
         <img class="trending__content-image-small" src="./image/1x/SecondaryBear@1x.jpg" alt="Keemun-bear" />
-        <div class="trending__content-image-count">1025+</div>
+        <div class="trending__content-image-count-desktop">1025+</div>
+  
       </div>
 
       <h3 class="trending__content-collection-name">DSGN Animals</h3>
@@ -190,6 +191,9 @@
         <img class="trending__content-image-small" src="./image/1x/graveTablet.jpg" alt="Grave" />
         <img class="trending__content-image-small" src="./image/1x/graveTablet1.jpg" alt="Grave" />
         <div class="trending__content-image-count">1025+</div>
+        <div class="trending__content-image-count-tablet">6+</div>
+        
+
       </div>
 
       <h3 class="trending__content-collection-name">Magic Mushrooms</h3>
@@ -204,7 +208,7 @@
 
     <!-- треття карточка -->
 
-    <div class="trending__content-card trending__card-hidden trending__card-hidden-desktop">
+    <div class="trending__content-card trending__content-card-hidden-tablet trending__content-card-hidden-mobile">
       <img 
         srcset="
           ./image/1x/PrimaryPhotoPlaceholder5@1x.jpg  330w,
@@ -219,7 +223,7 @@
       <div class="trending__content-image-group">
         <img class="trending__content-image-small" src="./image/1x/Secondary Photo Placeholder6.jpg" alt="Skater" />
         <img class="trending__content-image-small" src="./image/1x/Secondary Photo Placeholder7.jpg" alt="Skater" />
-        <div class="trending__content-image-count">1025+</div>
+        <div class="trending__content-image-count-desktop">1025+</div>
       </div>
 
       <h3 class="trending__content-collection-name">Disco Machines</h3>
@@ -302,7 +306,7 @@
 
      <!-- карткu для desktop -->
 
-               <li class="creators__content-item creators__item--desktop">
+               <li class="creators__content-item creators__content-item--desktop">
             <img class="creators__content-avatar" src="./image/1x/Avatar 7.jpg" alt="robotica" />
             <div class="creators__content-info">
               <h3 class="creators__content-name">Shroomie</h3>
@@ -311,7 +315,7 @@
             <div class="creators__content-round">7</div>
           </li>
 
-          <li class="creators__content-item">
+          <li class="creators__content-item creators__content-item--desktop">
             <img class="creators__content-avatar" src="./image/1x/Avatar 8.jpg" alt="Robotica"/>
             <div class="creators__content-info">
               <h3 class="creators__content-name">Robotica</h3>
@@ -320,7 +324,7 @@
             <div class="creators__content-round">8</div>
           </li>
 
-          <li class="creators__content-item">
+          <li class="creators__content-item creators__content-item--desktop">
             <img class="creators__content-avatar" src="./image/1x/Avatar 9.jpg" alt="RustyRobot"/>
             <div class="creators__content-info">
               <h3 class="creators__content-name">RustyRobot</h3>
@@ -329,7 +333,7 @@
             <div class="creators__content-round">9</div>
           </li>
 
-          <li class="creators__content-item">
+          <li class="creators__content-item creators__content-item--desktop">
             <img class="creators__content-avatar" src="./image/1x/Avatar 10.jpg" alt="Animakid"/>
             <div class="creators__content-info">
               <h3 class="creators__content-name">Animakid</h3>
@@ -338,7 +342,7 @@
             <div class="creators__content-round">10</div>
           </li>
 
-          <li class="creators__content-item">
+          <li class="creators__content-item creators__content-item--desktop">
             <img class="creators__content-avatar" src="./image/1x/Avatar 11.jpg" alt="Dotgu"/>
             <div class="creators__content-info">
               <h3 class="creators__content-name">Dotgu</h3>
@@ -347,7 +351,7 @@
             <div class="creators__content-round">11</div>
           </li>
 
-          <li class="creators__content-item">
+          <li class="creators__content-item creators__content-item--desktop">
             <img class="creators__content-avatar" src="./image/1x/Avatar 12.jpg" alt="Ghiblier"/>
             <div class="creators__content-info">
               <h3 class="creators__content-name">Ghiblier</h3>
@@ -571,7 +575,7 @@
       </div>
     </li>
 
-    <li class="discover__content-item">
+    <li class="discover__content-item discover__content-item-tablet">
       <div class="discover__content-card">
         <img 
           class="discover__content-card-image"
@@ -713,6 +717,8 @@
   
   <div class="subscribe__content-block-button">
     <button class="button subscribe__content-btn-address">Enter your email here</button>
+
+    <button class="button subscribe__content-btn-address-tablet">Enter Your Email Address</button>
     <button class="button subscribe__content-btn-subscribe">
       <svg class="subscribe__content-icon" width="20" height="20">
         <use href="./icon/icons.svg#icon-EnvelopeSimple"></use>
@@ -727,7 +733,7 @@
 </main>
 
 
-
+<footer>
   <div class="footer__content">
    
 <div class="footer__content-block-info">

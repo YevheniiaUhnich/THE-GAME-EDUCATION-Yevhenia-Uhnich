@@ -1,7 +1,35 @@
 .mobile__menu {
     display: none;
 
+    @include respond-to(sm) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+    
+    &-logo {
+        gap: 10px;
+    }
+
+    &-icon-storefront {
+        fill: rgba(162, 89, 255, 1);
+    }
+
+    &-icon-logo {
+        fill: $color-body;
+    }
+
+    &-burger {
+        fill: $color-body;
+    }
+
+    
+    }
+
     @include respond-to(xs) {
         display: block;
     }
 }
+
+

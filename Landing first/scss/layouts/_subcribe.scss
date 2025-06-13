@@ -14,18 +14,33 @@
         justify-content: center;
         align-items: center;
         gap: 80px;
+
+        @include respond-to(sm) {
+            width: 690px;
+            height: 360px;
+            gap: 40px;
+        }
     }
 
     &-image {
         width: 425px;
         height: 310px;
         border-radius: $border-radius;
+
+        @include respond-to(sm) {
+            width: 300px;
+            height: 280px;
+        }
     }
 
     &-block-about {
         display: flex;
         flex-direction: column;
         position: relative;
+
+        @include respond-to(sm) {
+            height: 280px;
+        }
     }
 
     &-title {
@@ -35,6 +50,11 @@
         font-weight: 600;
         line-height: 1.2;
         padding-bottom: 10px;
+
+        @include respond-to(sm) {
+            font-size: 28px;
+            line-height: 1.4;
+        }
     } 
 
     &-subtitle {
@@ -45,6 +65,13 @@
         line-height: 1.6;
         margin-top: 20px;
         margin-bottom: 60px;
+
+        @include respond-to(sm) {
+            font-size: 16px;
+            line-height: 1.4;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
     }
 
     &-block-button {
@@ -56,7 +83,6 @@
         &-btn-address {
             width: 425px;
             height: 60px;
-            padding: 14px 24px;
             background-color: white;
             flex-grow: 1;
             display: flex;
@@ -64,19 +90,44 @@
             color: rgba(43, 43, 43, 1);
             cursor: text;
             font-weight: 400;
-                font-size: 16px;
-                color: rgba(43, 43, 43, 1);
-            
-}
+            font-size: 16px;
+            color: rgba(43, 43, 43, 1);
+            border: none;
+        
+            @include respond-to(sm) {
+                display: none;
+            }
+        }
 
-&-btn-subscribe {
-    padding: 14px 20px;
-    background-color: $color-button;
-    position: absolute;
-    height: 61px;
-    width: 211px;
-    top: 251px;
-    left: 219px;
-    
+        &-btn-address-tablet {
+            display: none;
+
+            @include respond-to(sm) {
+                display: block;
+                color: rgba(43, 43, 43, 1);
+                background: $color-body;
+                height: 46px;
+                width: 300px;
+                border: none;
+                margin-top: 10px;
+            }
+        }
+
+            &-btn-subscribe {
+                padding: 14px 20px;
+                background-color: $color-button;
+                position: absolute;
+                height: 61px;
+                width: 211px;
+                top: 251px;
+                left: 219px;   
+
+            @include respond-to(sm) {
+                top: 210px;
+                left: 0;
+                width: 300px;
+                height: 46px;
+                margin-top: 10px;
+    }
 }
 }
