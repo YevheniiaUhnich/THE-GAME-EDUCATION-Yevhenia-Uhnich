@@ -1,12 +1,17 @@
 .discover__content {
     width: 100%;
-    height: 780px;
+    min-height: 780px;
+    height: auto;
     margin-top: 180px;
     position: relative;
 
     @include respond-to(sm) {
         margin-top: 80px;
-        height: 700px;
+        min-height: 700px;
+    }
+
+    @include respond-to(xs) {
+        min-height: 1557px;
     }
 
     &-title {
@@ -37,6 +42,10 @@
             line-height: 1.4;
             margin-left: 40px;
         }
+
+        @include respond-to(xs) {
+            margin-top: 10px;
+        }
     }
 
     &-list {
@@ -52,6 +61,14 @@
         @include respond-to(sm){
             width: 690px;
         }
+
+        @include respond-to(xs) {
+            width: 315px;
+            min-height: 1246px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+        }
     }
 
     &-item {
@@ -62,11 +79,20 @@
             width: 330px;
             height: 469px;
         }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 402px;
+        }
     }
 
     &-item-tablet {
         @include respond-to(sm) {
             display: none;
+        }
+
+        @include respond-to(xs) {
+            display: block;
         }
     }
 
@@ -81,6 +107,11 @@
             width: 330px;
             height: 295px;
         }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 238px;
+        }
     }
 
     &-block-info {
@@ -93,6 +124,11 @@
         @include respond-to(sm) {
             width: 330px;
             height: 173px;
+        }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 164px;
         }
     }
 
@@ -156,5 +192,11 @@
         position: absolute;
         top: 10px;
         right: 70px;
+
+        @include respond-to(xs) {
+            width: 315px;
+            top: 1420px;
+            right: 30px;
+        }
     }
 }

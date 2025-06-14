@@ -6,4 +6,8 @@
     @include respond-to(sm) {
         max-width: 768px;
     }
+
+        @include respond-to(xs) {
+            max-width: 480px;
+        }
 }

@@ -44,7 +44,13 @@
 
         @include respond-to(sm) {
             width: 690px;
+        }
 
+        @include respond-to(xs) {
+            width: 315px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
         }
     }
 
@@ -62,6 +68,12 @@
             width: 210px;
             height: 337px;
         }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 157px;
+            flex-direction: row;
+        }
     }
 
     &-image {
@@ -72,6 +84,11 @@
             width: 160px;
             height: 160px;
         }
+
+        @include respond-to(xs) {
+            width: 100px;
+            height: 100px;
+        }
     }
 
     &-block-text {
@@ -79,6 +96,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+    @include respond-to(xs) {
+        align-items: flex-start;
+    }
     }
 
     &-text {
@@ -90,6 +111,10 @@
 
         @include respond-to(sm) {
             font-size: 16px;
+        }
+
+        @include respond-to(xs) {
+            margin-left: 20px;
         }
     }
 
@@ -106,6 +131,12 @@
         @include respond-to(sm) {
             font-size: 12px;
             width: 170px;
+        }
+
+        @include respond-to(xs) {
+            width: 155px;
+            text-align: left;
+            margin-left: 20px;
         }
     }
 }

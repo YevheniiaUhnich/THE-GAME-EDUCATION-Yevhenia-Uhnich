@@ -12,18 +12,37 @@
             margin-left: auto;
             margin-right: auto;
         }
+    @include respond-to(xs) {
+        padding-top: 0;
+        width: 315px;
+        height: 706px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
    &-tablet-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+
+    @include respond-to(xs) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 315px;
+    }
    }
 
    &-text-block {
     display: flex;
     flex-direction: column;
     position: relative;
+
+    @include respond-to(xs) {
+        width: 315px;
+        }
    }
 
    &-title {
@@ -32,10 +51,17 @@
     font-size: 67px;
     font-weight: 600;
     width: 510px;
+    line-height: 1.1;
 
     @include respond-to(sm) {
         font-size: 38px;
         width: 330px;
+        line-height: 1.2;
+    }
+
+    @include respond-to(xs) {
+        font-size: 28px;
+        line-height: 1.4;  
     }
    }
 
@@ -51,8 +77,17 @@
             font-size: 16px;
             width: 330px;
    }
+
+   @include respond-to(xs) {
+       width: 315px;
+   }
 }
 
+   &-image-block {
+    @include respond-to(xs) {
+        width: 315px;
+    }
+   }
    &-image {
     width: 510px;
     height: 401px;
@@ -64,6 +99,11 @@
         width: 330px;
         height: 221px;
     }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 206px;
+        }
    }
 
    &-frame {
@@ -81,6 +121,9 @@
             width: 330px;
             height: 109px;
         }
+    @include respond-to(xs) {
+        width: 315px;
+    }
    }
 
    &-frame-title {
@@ -118,6 +161,11 @@
     @include respond-to(sm) {
         top: 460px;
     }
+
+        @include respond-to(xs) {
+            top: 680px;
+            width: 315px;
+        }
    }
 
    &-stats {
@@ -137,6 +185,12 @@
         top: 540px;
         left: 40px;
     }
+
+    @include respond-to(xs) {
+            top: 780px;
+            width: 315px;
+            gap: 15px;
+        }
    }
 
    &-stat-number {
@@ -159,5 +213,10 @@
             font-size: 16px;
             line-height: 1.4;
         }
+    
+    @include respond-to(xs) {
+            width: 100px;
    }
+}
+
 }
