@@ -2,7 +2,7 @@
     width: 100%;
     background-image: linear-gradient(90deg, rgba(162, 89, 255, 1) 0%, rgba(162, 89, 255, 0) 54%, rgba(162, 89, 255, 1) 100%),
             url(../image/1x/grib.png);
-    height: 640px;
+    min-height: 640px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +10,11 @@
     position: relative;
 
     @include respond-to(sm) {
-        height: 630px;
+        min-height: 630px;
+    }
+
+    @include respond-to(xs) {
+        min-height: 590px;
     }
 
     &::after {
@@ -41,6 +45,11 @@
         @include respond-to(sm) {
             margin-left: 40px;
         }
+
+        @include respond-to(xs) {
+            margin-top: 120px;
+            margin-left: 30px;
+        }
     } 
 
     &-subtitle {
@@ -66,6 +75,11 @@
             margin-top: 30px;
             margin-left: 40px;
         }
+
+        @include respond-to(xs) {
+            margin-left: 30px;
+            width: 315px;
+        }
     }
 
     &-btn-NFT {
@@ -80,6 +94,11 @@
         @include respond-to(sm) {
             top: 510px;
             left: 40px;
+        }
+
+        @include respond-to(xs) {
+            width: 315px;
+            left: 30px;
         }
     }
 
@@ -103,6 +122,12 @@
         @include respond-to(sm) {
             right: 40px;
             top: 430px;
+        }
+
+        @include respond-to(xs) {
+            top: 320px;
+            right: 30px;
+            width: 315px;
         }
     }
 

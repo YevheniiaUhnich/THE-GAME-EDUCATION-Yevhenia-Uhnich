@@ -1,5 +1,5 @@
 .header__nav {
-    width: 100%;
+    width: 1280px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,5 +57,6 @@
     &-signup-btn {
         width: 152px;
         height: 60px;
+        
     }
 }

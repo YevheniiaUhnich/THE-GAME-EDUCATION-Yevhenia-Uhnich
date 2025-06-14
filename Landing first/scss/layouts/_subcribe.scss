@@ -4,7 +4,7 @@
 
     &-block-image {
         width: 1050px;
-        height: 430px;
+        min-height: 430px;
         background: $bg-card;
         border-radius: $border-radius;
         margin-left: auto;
@@ -17,8 +17,15 @@
 
         @include respond-to(sm) {
             width: 690px;
-            height: 360px;
+            min-height: 360px;
             gap: 40px;
+        }
+
+        @include respond-to(xs) {
+            width: 315px;
+            min-height: 645px;
+            background: transparent;
+            flex-direction: column;
         }
     }
 
@@ -30,6 +37,11 @@
         @include respond-to(sm) {
             width: 300px;
             height: 280px;
+        }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 255px;
         }
     }
 
@@ -78,6 +90,10 @@
         display: flex;
         gap: 12px;
         align-items: center;
+
+    @include respond-to(xs) {
+        margin-top: 40px;
+    }
     }
 
         &-btn-address {
@@ -128,6 +144,10 @@
                 width: 300px;
                 height: 46px;
                 margin-top: 10px;
-    }
-}
+            }
+
+            @include respond-to(xs) {
+                top: 250px;
+            }
+        }
 }

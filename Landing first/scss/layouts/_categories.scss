@@ -6,6 +6,10 @@
         margin-top: 80px;
     }
 
+    @include respond-to(xs) {
+        margin-top: 180px;
+    }
+
     &-title {
         font-family: $font-primary;
         color: $color-body;
@@ -34,6 +38,13 @@
         @include respond-to(sm) {
             width: 690px;
         }
+
+        @include respond-to(xs) {
+            width: 315px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 20px;
+        }
     }
 
     &-item {
@@ -47,6 +58,10 @@
         @include respond-to(sm) {
             width: 150px;
             height: 209px;
+        }
+
+        @include respond-to(xs) {
+            width: 147px;
         }
     }
 
