@@ -1,0 +1,18 @@
+hyml {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+
+    @include respond-to(sm) {
+        max-width: 768px;
+    }
+
+    @include respond-to(xs) {
+        max-width: 480px;
+    }
+}
