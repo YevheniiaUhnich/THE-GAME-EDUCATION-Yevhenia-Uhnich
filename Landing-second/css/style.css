@@ -152,6 +152,10 @@ hyml {
   padding: 40px;
   position: relative;
 }
+.losing__content-image-pro {
+  margin-right: 30px;
+  z-index: 1;
+}
 .losing__content-circle {
   position: absolute;
   left: 26px;
