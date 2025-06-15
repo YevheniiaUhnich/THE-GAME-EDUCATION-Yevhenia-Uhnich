@@ -1,0 +1,193 @@
+.example__content {
+    width: 100%;
+    margin-top: 80px;
+
+    &-title {
+        font-family: $font-family;
+        color: $color-body;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-left: 70px;
+    }
+
+    &-block {
+        background: rgba(242, 242, 242, 1);
+        min-height: 462px;
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    &-text-description {
+        width: 436px;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-left: 70px;
+    }
+
+    &-btn-block {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+
+    &-btn-description {
+        position: relative;
+        width: 162px;
+        height: 77px;
+        border: 1px solid rgba(205, 205, 205, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(205, 205, 205, 1);
+        overflow: visible;
+    }
+
+        &-btn-kg,
+        &-btn-days {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.4;
+        font-family: $font-family;
+        text-transform: $text-transform;
+        color: $color-body;
+        z-index: 0;
+        }
+
+    &-btn-line {
+        width: 127px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $font-secondary;
+        color: $color-body;
+        color: gray;
+        z-index: 2;
+        pointer-events: none;
+        transform: translateX(-50%) translateY(130%);
+        background-color: rgba(242, 242, 242, 1);
+        padding: 0 4px;
+        line-height: 1;
+    }
+
+    &-costs {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+
+    &-food-costs {
+        font-family: $font-family;
+        text-transform: $text-transform;
+        color: $color-body;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    &-price {
+        font-family: $font-family;
+        text-transform: $text-transform;
+        color: $color-body;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    &-left-cat {
+        position: absolute;
+        top: -200px;
+        left: 680px;
+    }
+
+    &-right-cat {
+        position: absolute;
+        top: -200px;
+        left: 1042px;
+    }
+
+    &-line-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+        position: absolute;
+        top: 320px;
+        left: 760px;
+    }
+
+    &-line-text {
+        font-family: $font-family;
+        text-transform: $text-transform;
+        font-size: 20px;
+        color: $color-body;
+        font-weight: 400;
+        display: inline-block; 
+        border-bottom: 1px dashed rgba(0, 0, 0, 1); 
+        padding-bottom: 1px;
+    }
+
+    &-line {
+        position: relative;
+        flex: 1;
+        height: 6px;
+        width: 428px;
+        background-color: rgba(220, 220, 220, 1); 
+        border-radius: 6px;     
+    }
+
+    &-line-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10mm;
+        height: 10mm;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 6px solid transparent; 
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    &-line-circle-outer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 1);
+        border: 2px solid rgba(205, 205, 205, 1); 
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    &-line-circle-inner {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgba(104, 183, 56, 1);
+    }
+
+}
