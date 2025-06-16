@@ -1,6 +1,10 @@
 .work__content {
     width: 100%;
     margin-top: 80px;
+    
+    @include respond-to(sm) {
+        min-height: 520px;
+    }
 
     &-title {
         font-family: $font-family;
@@ -9,6 +13,10 @@
         font-weight: 400px;
         line-height: 1.6;
         margin-left: 70px;
+
+        @include respond-to(sm) {
+            margin-left: 20px;
+        }
     }
 
     &-list {
@@ -20,12 +28,25 @@
         margin-left: auto;
         padding-left: 0;
         width: 1280px;
+
+        @include respond-to(sm) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+            width: 708px;
+            height: 520px;
+        }
     }
 
     &-item {
         width: 260px;
         height: 310px;
         position: relative;
+
+        @include respond-to(sm) {
+            width: 230px;
+            height: 280px;
+        }
     }
 
     &-block-all {
@@ -34,7 +55,11 @@
         width: 260px;
         height: 310px;
         margin: 0;
-        
+
+        @include respond-to(sm) {
+            width: 230px;
+            height: 280px;
+        }    
     }
 
     &-square {
