@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <main>
+        <section class="calculator__content">
+           
+    <h1 class="calculator__content-title">Hello world, my app tranform a percents and time</h1>
+
+    <div class="calculator__content-btn-title-block">
+        <button id="percentsTab" class="calculator__content-btn-title">Calculator of percents</button>
+        <button id="timeTab" class="calculator__content-btn-title">Transform of time</button>
+    </div>
+    <div class="calculator__content-block-form">
+   
+
+    <form id="sectionPercents" class="calculator__content-form">
+        <label class="calculator__content-label">Number</label>
+        <input class="calculator__content-input" type="number" placeholder="Enter a number" id="baseNumber" />
+    
+        <label class="calculator__content-label">Percents</label>
+        <input class="calculator__content-input calculator__content-input-border" type="number" placeholder="Enter percents"
+            id="percentValue" />
+    
+        <input class="calculator__content-input calculator__content-input-border" placeholder="Results" type="text"
+            id="percentResult" readonly />
+    
+        <button class="calculator__content-button" type="submit">Calculate</button>
+    </form>
+    
+   
+    <form id="sectionTime" class="calculator__content-block-percents">
+        <label class="calculator__content-label">Number of seconds</label>
+        <input class="calculator__content-input calculator__content-input-border" type="number" placeholder="Enter seconds"
+            id="secondsInput" />
+    
+        <input class="calculator__content-input calculator__content-input-border" placeholder="Results" type="text"
+            id="timeResult" readonly />
+    
+        <button class="calculator__content-button" type="submit">Convert</button>
+    </form>
+
+</div>
+</section>
+</main>
+    <script src="./number.js"></script>
+    <script src="./percents.js"></script>
+</body>
+</html>
