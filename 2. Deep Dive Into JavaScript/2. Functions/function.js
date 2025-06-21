@@ -58,13 +58,13 @@ const genA = makePromoGenerator("SALE-");
 const genB = makePromoGenerator();
 
 console.log(genA());  // "SALE-1"
-console.log( genA() ); // "SALE-2"
+console.log( genA()); // "SALE-2"
 console.log(genA()); // "SALE-3"
 
-console.log( genB() ); // "PROMO-1"
+console.log( genB()); // "PROMO-1"
 console.log(genB()); // "PROMO-2"
 
-console.log( genA() ); // "SALE-4" 
+console.log( genA()); // "SALE-4" 
 
 
 /* Код, який створює лічильник, який спрацьовує кожного разу, коли на нього натискають. 
