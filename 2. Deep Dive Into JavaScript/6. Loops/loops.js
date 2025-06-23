@@ -8,7 +8,7 @@ function sumDigits(n) {
 
   const digits = n.toString();
   for (let i = 0; i < digits.length; i++) {
-    sum += parseInt(digits[i]);
+    sum += +digits[i];
   }
   return sum;
 }
