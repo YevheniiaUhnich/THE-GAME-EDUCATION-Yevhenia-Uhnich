@@ -67,4 +67,3 @@ const likeBook = {
 };
 console.log(invert(likeBook));
 
-
