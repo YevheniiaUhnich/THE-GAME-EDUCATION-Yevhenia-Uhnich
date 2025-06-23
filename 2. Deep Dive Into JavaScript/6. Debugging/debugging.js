@@ -55,10 +55,9 @@ const users = [
   { name: "Іван", age: 25 },
 ];
 
-function getUserAge(age) {
+function getUserAge(name) {
   for (let i = 0; i < age.length; i++) {
-    if ((users[i].age === age)) {
-      
+    if (users[i].age === age) {
       return users[i].age;
     }
   }
