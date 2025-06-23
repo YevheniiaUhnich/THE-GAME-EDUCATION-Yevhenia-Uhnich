@@ -33,7 +33,11 @@ function isInArray(el, arr) {
     el +
     ", " +
     (arr.includes(el) ? "є" : "не є") +
+feature/js-branches
+    " частиною масиву [" +
+
     " частиною масиву " +
+ main
     arr.join(", ") +
     "]";
   return message;
