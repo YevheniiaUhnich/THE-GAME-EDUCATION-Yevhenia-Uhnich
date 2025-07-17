@@ -11,9 +11,18 @@ header.textContent = "Моя бібліотека";
 if (menuItem.length > 0) {
   menuItem[0].classList.add("highlight");
 }
-bookCards.forEach(cards => {
-  cards.style.color = 'green';
-  cards.style.fontSize = '23px';
+
+bookCards.forEach((bookCard) => {
+  const innerCards = document.querySelectorAll(".card");
+  console.log(innerCards);
+
+  innerCards.forEach((card) => {
+    const title = card.querySelector(".card__title");
+    if (title) {
+      card.style.color = "green";
+      card.style.fontSize = "23px";
+    }
+  });
 });
 
 bookTitle.textContent = "Оберіть жанр";
@@ -25,6 +34,8 @@ cards.forEach((card, index) => {
 });
 
 cardAuthor.forEach(cardTwoo => {
-  cardTwoo.style.fontStyle = 'italic';
+  if (cardTwoo.textContent.includes(2)) {
+    cardTwoo.style.fontStyle = "italic";
+  }
 });
 
