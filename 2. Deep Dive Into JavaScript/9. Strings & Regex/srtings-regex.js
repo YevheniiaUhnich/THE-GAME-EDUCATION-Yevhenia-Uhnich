@@ -15,13 +15,14 @@ console.log(normalizeName(" aNNA mARie ")); // "Anna Marie"
 //Завдання 2
 
 function isValidEmail(email) {
-  const regex = /^[a-zA-Z0-9._-]+@[a-zA-z0-9-]+(.\[a-zA-Z0-9-]+)*\.[a-zA-Z]+$/;
+  const regex =
+    /^[A-Za-z0-9._-]+@(?:[A-Za-z0-9-]*[A-Za-z])(?:\.(?:[A-Za-z0-9-]*[A-Za-z]))+$/;
   return regex.test(email);
 }
 
 console.log(isValidEmail("test.user-1@example.co")); // true
-
 console.log(isValidEmail("bad@@example..com")); // false
+console.log(isValidEmail("test.user-1@example.co")); // true console.log(isValidEmail("bad[@@example](https://github.com/@example)..com")); // false console.log(isValidEmail("user_name[@sub](https://github.com/sub).domain.com")); // true console.log(isValidEmail("user[@domain](https://github.com/domain)")); // false (немає другого сегмента) console.log(isValidEmail("user[@-domain](https://github.com/-domain).com")); // false (сегмент починається з тире) console.log(isValidEmail("user[@domain-](https://github.com/domain-).com")); // false (сегмент закінчується тире)
 
 //Завдання 3
 
