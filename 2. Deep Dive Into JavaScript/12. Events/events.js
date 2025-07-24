@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let blockCounter = 0;
 
   const randomColors = () => {
-    const numberLetter = "0123456789ABCDF";
+    const numberLetter = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
       color += numberLetter[Math.floor(Math.random() * 16)];
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return color;
   };
 
-  addBtn.addEventListener("click", (e) => {
+  function createBlock() {
     blockCounter++;
 
     const newBlock = document.createElement("div");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     newBtn.appendChild(newBlock);
 
     newBlock.addEventListener("click", () => {
-      style.backgroundColor = randomColors();
+      newBlock.style.backgroundColor = randomColors();
     });
 
     newBlock.addEventListener("mouseover", () => {
@@ -41,26 +41,33 @@ document.addEventListener("DOMContentLoaded", () => {
     newBlock.addEventListener("mouseout", () => {
       if (tooltip) tooltip.style.display = "none";
     });
-  });
+  }
 
-  btnClear.addEventListener("click", () => {
+  function clearBlocks() {
     newBtn.replaceChildren("");
     blockCounter = 0;
 
     const event = new CustomEvent("blocksCleared");
     newBtn.dispatchEvent(event);
-  });
+  }
 
+  addBtn.addEventListener("click", () => {
+    createBlock();
+  });
+  btnClear.addEventListener("click", () => {
+    clearBlocks();
+  });
   newBtn.addEventListener("blocksCleared", () => {
     console.log("Усі блоки видалено");
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "enter") {
+    if (e.key === "Enter") {
       createBlock();
     }
-    if (e.key === "delete") {
+    if (e.key === "Delete") {
       clearBlocks();
     }
   });
 });
+
