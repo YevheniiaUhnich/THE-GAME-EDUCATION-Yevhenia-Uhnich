@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.getElementById("btnAdd");
   const btnClear = document.getElementById("btnClear");
-  const newBtn = document.getElementById("blockCounter");
+  const container = document.getElementById("blockCounter");
 
   let blockCounter = 0;
 
@@ -25,39 +25,65 @@ document.addEventListener("DOMContentLoaded", () => {
     const tooltip = document.createElement("span");
     tooltip.className = "tooltip";
     tooltip.textContent = `Ви на блоці №${blockCounter}`;
-    tooltip.style.display = "none";
+    tooltip.style.visibility = "hidden";
+    tooltip.style.opacity = "0";
 
     newBlock.appendChild(tooltip);
-    newBtn.appendChild(newBlock);
-
-    newBlock.addEventListener("click", () => {
-      newBlock.style.backgroundColor = randomColors();
-    });
-
-    newBlock.addEventListener("mouseover", () => {
-      if (tooltip) tooltip.style.display = "block";
-    });
-
-    newBlock.addEventListener("mouseout", () => {
-      if (tooltip) tooltip.style.display = "none";
-    });
+    container.appendChild(newBlock);
   }
 
   function clearBlocks() {
-    newBtn.replaceChildren("");
+    container.replaceChildren("");
     blockCounter = 0;
 
     const event = new CustomEvent("blocksCleared");
-    newBtn.dispatchEvent(event);
+    container.dispatchEvent(event);
   }
+
+  container.addEventListener("click", (e) => {
+    const block = e.target.closest(".event-block");
+    if (!block || !container.contains(block)) return;
+
+    block.style.backgroundColor = randomColors();
+  });
+
+  container.addEventListener("mouseover", (e) => {
+    const block = e.target.closest(".event-block");
+    if (!block || !container.contains(block)) return;
+
+    const related = e.relatedTarget;
+    if (related && block.contains(related)) return;
+
+    const tooltip = block.querySelector(".tooltip");
+    if (tooltip) {
+      tooltip.style.visibility = "visible";
+      tooltip.style.opacity = "1";
+    }
+  });
+
+  container.addEventListener("mouseout", (e) => {
+    const block = e.target.closest(".event-block");
+    if (!block || !container.contains(block)) return;
+
+    const related = e.relatedTarget;
+    if (related && block.contains(related)) return;
+
+    const tooltip = block.querySelector(".tooltip");
+    if (tooltip) {
+      tooltip.style.visibility = "hidden";
+      tooltip.style.opacity = "0";
+    }
+  });
 
   addBtn.addEventListener("click", () => {
     createBlock();
   });
+
   btnClear.addEventListener("click", () => {
     clearBlocks();
   });
-  newBtn.addEventListener("blocksCleared", () => {
+
+  container.addEventListener("blocksCleared", () => {
     console.log("Усі блоки видалено");
   });
 
@@ -70,4 +96,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
