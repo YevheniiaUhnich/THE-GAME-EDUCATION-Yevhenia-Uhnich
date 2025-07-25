@@ -42,13 +42,21 @@ function sayHello(greeting, punctuation) {
   }
 
 const alice = { name: "Аліса" };
-sayHello.call(alice, 'Hello', '!'); // Hello, я — Аліса!
+sayHello.call(alice, 'Hello', '!'); // Hello, я - Аліса!
+
+// const alice = { name: "Аліса"};
+// sayHello.apply('Hello', ['!']) // Hello, я — Аліса!
 
 const bob = { name: "Боб" };
-sayHello.call(bob, 'Hello', '!'); //Hello, я — Боб!
+sayHello.call(bob, 'Hello', '!'); // Hello, я — Боб!
+
+// const bob = { name: "Боб" };
+// sayHello.apply('Hello', ['!']) // Hello, я — Боб!
 
 const aliceHello = sayHello.bind(alice, "Привіт");
 aliceHello("!"); // Привіт, я — Аліса!
+
+// використала call, бо аргументи передаються по черзі, а не у вигляді масива, і їх мало
 
 // call - викликає функцію одразу, аргументи передаються через кому
 // apply - викликає функцію одразу, аргументи передаються масивом
@@ -58,8 +66,10 @@ aliceHello("!"); // Привіт, я — Аліса!
 // Завдання 4
 
 function greetAll(greeting) {
-  this.forEach(name => console.log(`${greeting}, ${name}!`));
-}
+  this.forEach(function (name) {
+    console.log(`${greeting}, ${name}!`);
+  }, this);
+} 
 
 const names = ['Оля', 'Іван', 'Маша'];
   
