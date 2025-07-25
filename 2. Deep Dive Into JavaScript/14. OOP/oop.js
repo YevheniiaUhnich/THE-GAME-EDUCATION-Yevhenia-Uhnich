@@ -8,7 +8,7 @@ class BankAccount {
 
   deposit(amount) {
        if (amount <= 0) {
-         throw new ('сума поповнення має бути більша за 0');    
+         throw new Error("сума поповнення має бути більша за 0");    
        }
     this._balance += amount;
     return this._balance;
@@ -16,7 +16,7 @@ class BankAccount {
 
   withdraw(amount) {
     if (amount <= 0) {
-      throw new "сума поповнення має бути більша за 0"();    
+      throw new Error("сума зняття має бути більша за 0");    
     }
     if (amount > this._balance) {
       throw new Error("Недостатньо коштів");
@@ -57,12 +57,12 @@ console.log(save.withdraw(1000));   // 1750
 // Завдання 3
 
 class Shape {
-  constructor(name = "Shape") {
+  getArea() {
     this.name = name;
   }
-getArea() {
-  throw new Error('Not implemented');
-}
+  getArea() {
+    throw new Error("Not implemented");
+  }
 }
 
 class Rectangle extends Shape {
