@@ -72,19 +72,29 @@ loadUsersBtn.onclick = () => {
 async function loadPostsForUser(userId) {
   postFetchController = new AbortController();
   try {
-    const response = await fetchWithTimeout(
-      `https://jsonplaceholder.typicode.com/posts?userId=${userId}`,
-      5000,
-      postFetchController.signal
+    const postIds = [1, 2, 3];
+    const fetchPromises = postIds.map((postId) =>
+      fetchWithTimeout(
+        `https://jsonplaceholder.typicode.com/posts/${postId}`,
+        5000,
+        postFetchController.signal
+      ).then((response) => {
+        if (!response.ok)
+          throw new Error(`HTTP помилка! Статус: ${response.status}`);
+        return response.json();
+      })
     );
-    if (!response.ok) throw new Error(`HTTP помилка! Статус: ${response.status}`);
-    const posts = await response.json();
+
+    const posts = await Promise.all(fetchPromises);
+
     postsList.innerHTML = "";
 
     posts.forEach((post) => {
-      const li = document.createElement("li");
-      li.innerHTML = `<strong>${post.title}</strong><br>${post.body}`;
-      postsList.appendChild(li);
+      if (post.userId.toString() === userId.toString()) {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${post.title}</strong><br>${post.body}`;
+        postsList.appendChild(li);
+      }
     });
   } catch (error) {
     if (error.name === 'AbortError') {
