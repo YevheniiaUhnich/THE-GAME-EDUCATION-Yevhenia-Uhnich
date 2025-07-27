@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+
+</head>
+<body>
+  <h1>Зв’яжіться з нами</h1>
+  <form id="contactForm" action="https://formspree.io/f/xrblqzya" method="POST">
+    <label>Ім’я:<input type="text" name="name" required></label>
+    <label>Email:<input type="email" name="email" required></label>
+    <label>Повідомлення:<textarea name="message" required></textarea></label>
+    <label>Файл<input type="fail" name="attachment" id="attachmentInput" /></label>
+    <button type="submit" id="btnSubmit">Надіслати</button>
+    <p id="status"></p>
+    <div id="filePreview" style="margin-top: 0.5em; font-size: 0.9em; color: #555;"></div>
+  </form>
+</body>
+</html>
