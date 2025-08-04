@@ -1,4 +1,5 @@
 import { useState } from "react";
+import s from './Button.module.css';
 
 const Button = () => {
   const [text, setText] = useState('');
@@ -33,22 +34,22 @@ const Button = () => {
   
   return (
     <>
-    <button onClick={handleClick}>Click for me</button>
+    <button className={s.btnOnClick} onClick={handleClick}>Click for me</button>
       <div>
-      <p>Write your text: {text}</p>
-        <input type="text" onChange={handleChange} />  
+      <p className={s.textTitle}>Write your text: {text}</p>
+        <input className={s.input} type="text" onChange={handleChange} />  
       </div>
       
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="text" />
-        <label name="text" ></label>
+      <form className={s.form} onSubmit={handleSubmit}>
+        <input className={s.input} type="text" name="text" />
+        <label className={s.label} name="text" ></label>
 
-        <button type="submit">send</button>
+        <button className={s.btnForm} type="submit">send</button>
       </form>
 
-      <button type="button" onMouseOver={handleOnMouseOver}>Hover on me</button>
+      <button className={s.btmMouse} type="button" onMouseOver={handleOnMouseOver}>Hover on me</button>
 
-      <input type="text" placeholder="click on me" onKeyDown={handleOnKeyDown}/>
+      <input className={s.input} type="text" placeholder="click on me" onKeyDown={handleOnKeyDown}/>
       </>
   )
 }

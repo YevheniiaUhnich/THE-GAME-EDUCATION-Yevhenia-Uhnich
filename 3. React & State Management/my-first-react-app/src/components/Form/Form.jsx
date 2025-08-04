@@ -1,4 +1,5 @@
 import { useState } from "react";
+import s from './Form.module.css';
 
 const Form = () => {
   const [content, setContent] = useState('');
@@ -8,8 +9,8 @@ const Form = () => {
   }
   return (
     <>
-      <p>Ви ввели: {content}</p>
-      <input type="text" onChange={handleChange} value={content} placeholder="Введіть щось..." />
+      <p className={s.form}>Ви ввели: {content}</p>
+      <input className={s.input} type="text" onChange={handleChange} value={content} placeholder="Введіть щось..." />
       
     </>
   )

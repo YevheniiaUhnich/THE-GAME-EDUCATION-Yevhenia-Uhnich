@@ -1,0 +1,77 @@
+.btnOnClick {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.btnOnClick:hover {
+  background-color: #218838;
+}
+
+.textTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 14px;
+  color: #555;
+}
+
+.btnForm {
+  width: 210px;
+  padding: 10px 20px;
+  background-color: #0077ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnForm:hover {
+  background-color: #005fd1;
+}
+
+.btmMouse {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: #212529;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.btmMouse:hover {
+  background-color: #e0a800;
+}
