@@ -1,0 +1,26 @@
+.userList {
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.list {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.list:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+p {
+  font-style: italic;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}

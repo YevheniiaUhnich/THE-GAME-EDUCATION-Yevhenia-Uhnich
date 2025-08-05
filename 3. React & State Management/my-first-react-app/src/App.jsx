@@ -9,7 +9,9 @@ import AuthBox from './components/AuthBox/AuthBox';
 import InputText from './components/InputText/InputText';
 import RoleButton from './components/RoleButton/RoleButton';
 import TodoList from './components/TodoList/TodoList';
+import UserList from './components/UserList/UserList';
 import { useState } from 'react';
+
 
 export default function App() {
   const [isLoggidIn, setIsLoggidIn] = useState(false);
@@ -34,6 +36,8 @@ export default function App() {
       <RoleButton role="admin" />
       <h2>Мій список завдань</h2>
       <TodoList />
+      <h2>Список користувачів</h2>
+      <UserList />
     </>
   )
 }

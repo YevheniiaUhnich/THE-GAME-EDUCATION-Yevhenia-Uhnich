@@ -12,13 +12,13 @@ ul {
   padding: 10px 15px;
   border-bottom: 1px solid #ddd;
   font-size: 20px;
-  color: #333;
+  color: white;
   cursor: default;
   transition: background-color 0.3s ease;
 }
 
 .item:hover {
-  background-color: #e0f7fa;
+  background-color: violet;
 }
 
 .item:last-child {
