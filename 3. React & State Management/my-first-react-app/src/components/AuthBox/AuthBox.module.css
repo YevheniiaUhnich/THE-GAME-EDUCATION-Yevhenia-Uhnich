@@ -1,0 +1,35 @@
+.authBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #dcdcdc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.authBox p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.authBox button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authBox button:hover {
+  background-color: #005fd1;
+}
