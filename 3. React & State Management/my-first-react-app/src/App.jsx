@@ -8,6 +8,7 @@ import ColorButton from './components/ColorButton/ColorButton';
 import AuthBox from './components/AuthBox/AuthBox';
 import InputText from './components/InputText/InputText';
 import RoleButton from './components/RoleButton/RoleButton';
+import TodoList from './components/TodoList/TodoList';
 import { useState } from 'react';
 
 export default function App() {
@@ -30,7 +31,9 @@ export default function App() {
       <ColorButton />
       <AuthBox isLoggidIn={isLoggidIn} name="Yevheniia" onLogin={handleLogin} />
       <InputText />
-      <RoleButton role = "admin" />
+      <RoleButton role="admin" />
+      <h2>Мій список завдань</h2>
+      <TodoList />
     </>
   )
 }
