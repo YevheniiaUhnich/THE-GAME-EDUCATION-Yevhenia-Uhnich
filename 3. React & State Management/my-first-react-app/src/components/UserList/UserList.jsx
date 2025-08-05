@@ -5,7 +5,7 @@ const UserList = ({ users }) => {
   }
 
   return (
-    <ul>
+    <ul className={s.userList}>
       {users.map(user => (
         <li className={s.list} key={user.id}>{user.name} - {user.email}</li>
       ))}
