@@ -11,6 +11,7 @@ import RoleButton from './components/RoleButton/RoleButton';
 import TodoList from './components/TodoList/TodoList';
 import UserList from './components/UserList/UserList';
 import { useState } from 'react';
+import UserPost from './components/UserPost/UserPost';
 
 
 export default function App() {
@@ -22,6 +23,12 @@ export default function App() {
     name: "Yevhenia",
     city: "Kyiv",
   };
+
+  const users = [
+    { id: 1, name: 'Yevheniia', email: 'kjaine@gmail.com' },
+    { id: 2, name: 'Yevhenia2', email: 'kjaine1@ukr.net' },
+  ];
+
   return (
     <>
       <Header />
@@ -37,7 +44,9 @@ export default function App() {
       <h2>Мій список завдань</h2>
       <TodoList />
       <h2>Список користувачів</h2>
-      <UserList />
+      <UserList users={users} />
+      <h2>Список постів</h2>
+      <UserPost />
     </>
   )
 }

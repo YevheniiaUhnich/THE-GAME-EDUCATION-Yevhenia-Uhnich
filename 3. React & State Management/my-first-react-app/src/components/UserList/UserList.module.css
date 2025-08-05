@@ -9,11 +9,11 @@
 .list {
   padding: 8px 12px;
   border-bottom: 1px solid #ddd;
-  color: #333;
+  color: #dde8ee;
 }
 
 .list:hover {
-  background-color: #f0f0f0;
+  background-color: #17d5b6;
   cursor: pointer;
 }
 
