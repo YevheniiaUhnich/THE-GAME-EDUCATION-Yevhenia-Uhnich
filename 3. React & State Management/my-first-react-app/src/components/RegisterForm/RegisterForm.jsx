@@ -189,6 +189,7 @@ const styles = {
     fontWeight: "500",
     cursor: "pointer",
     transition: "all 0.3s ease",
+    margin: "10px 0",
   },
   error: {
     color: "red",
