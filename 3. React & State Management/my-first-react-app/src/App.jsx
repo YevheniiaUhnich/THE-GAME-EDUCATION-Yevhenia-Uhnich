@@ -10,15 +10,25 @@ import InputText from './components/InputText/InputText';
 import RoleButton from './components/RoleButton/RoleButton';
 import TodoList from './components/TodoList/TodoList';
 import UserList from './components/UserList/UserList';
-// import { useState } from 'react';
+// import { useEffect, useState } from 'react';
 import UserPost from './components/UserPost/UserPost';
 import Uncontrolled from './components/FormControl/Uncontrolied';
 import Controlled from './components/FormControl/Controlled';
 import RegisterForm from './components/RegisterForm/RegisterForm';
 import FormReviews from './components/FormReviews/FormReviews';
+import PostFetcher from './components/PostFetcher/PostFetcher';
+import InputEffect from './components/InputEffect/InputEffect';
 
 
 export default function App() {
+
+  // useEffect(() => {
+  //   const id = setInterval(() =>
+  //     console.log('tick'), 1000);
+  //   return () => clearInterval(id);
+  // }, []);
+
+
   // const [isLoggidIn, setIsLoggidIn] = useState(false);
   // const handleLogin = () => {
   //   setIsLoggidIn(true);
@@ -35,11 +45,14 @@ export default function App() {
 
   return (
     <>
-     {/* <Header /> 
-      <FormReviews /> */}
-      <RegisterForm />
-      {/* <Uncontrolled />
-      <Controlled /> */}
+      <Header /> 
+      <InputEffect />
+      <PostFetcher /> 
+      
+      {/* <FormReviews />  */}
+      {/* <RegisterForm /> */}
+       {/* <Uncontrolled /> */}
+      {/* <Controlled />  */}
      {/* <UserCard user={user} /> 
       <Footer />
       <Button />
