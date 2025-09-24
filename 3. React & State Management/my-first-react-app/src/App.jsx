@@ -10,35 +10,43 @@ import InputText from './components/InputText/InputText';
 import RoleButton from './components/RoleButton/RoleButton';
 import TodoList from './components/TodoList/TodoList';
 import UserList from './components/UserList/UserList';
-import { useState } from 'react';
+// import { useState } from 'react';
 import UserPost from './components/UserPost/UserPost';
+import Uncontrolled from './components/FormControl/Uncontrolied';
+import Controlled from './components/FormControl/Controlled';
+import RegisterForm from './components/RegisterForm/RegisterForm';
+import FormReviews from './components/FormReviews/FormReviews';
 
 
 export default function App() {
-  const [isLoggidIn, setIsLoggidIn] = useState(false);
-  const handleLogin = () => {
-    setIsLoggidIn(true);
-  }
-  const user = {
-    name: "Yevhenia",
-    city: "Kyiv",
-  };
+  // const [isLoggidIn, setIsLoggidIn] = useState(false);
+  // const handleLogin = () => {
+  //   setIsLoggidIn(true);
+  // }
+  // const user = {
+  //   name: "Yevhenia",
+  //   city: "Kyiv",
+  // };
 
-  const users = [
-    { id: 1, name: 'Yevheniia', email: 'kjaine@gmail.com' },
-    { id: 2, name: 'Yevhenia2', email: 'kjaine1@ukr.net' },
-  ];
+  // const users = [
+  //   { id: 1, name: 'Yevheniia', email: 'kjaine@gmail.com' },
+  //   { id: 2, name: 'Yevhenia2', email: 'kjaine1@ukr.net' },
+  // ];
 
   return (
     <>
-      <Header />
-      <UserCard user={user} />
+     {/* <Header /> 
+      <FormReviews /> */}
+      <RegisterForm />
+      {/* <Uncontrolled />
+      <Controlled /> */}
+     {/* <UserCard user={user} /> 
       <Footer />
       <Button />
       <Toggle />
       <Form />
-      <ColorButton />
-      <AuthBox isLoggidIn={isLoggidIn} name="Yevheniia" onLogin={handleLogin} />
+      <ColorButton /> */}
+      {/* <AuthBox isLoggidIn={isLoggidIn} name="Yevheniia" onLogin={handleLogin} />
       <InputText />
       <RoleButton role="admin" />
       <h2>Мій список завдань</h2>
@@ -46,7 +54,8 @@ export default function App() {
       <h2>Список користувачів</h2>
       <UserList users={users} />
       <h2>Список постів</h2>
-      <UserPost />
+      <UserPost /> */}
+      
     </>
   )
 }
