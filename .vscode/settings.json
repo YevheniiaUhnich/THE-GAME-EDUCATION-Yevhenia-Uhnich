@@ -1,0 +1,4 @@
+{
+  "codeium.apiServerUrl": "https://codeium.example.com",
+  "codeiumEnterprise.extensionBaseUrl": "https://codeium.example.com"
+}

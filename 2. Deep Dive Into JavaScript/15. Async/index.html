@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Async Users & Posts</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <h1>Переглядач користувачів</h1>
+  <button id="loadUsers">Завантажити користувачів</button>
+  <ul id="usersList"></ul>
+
+  <div id="postsSection" hidden>
+    <h2>Пости користувача <span id="userName"></span></h2>
+    <button id="loadPosts">Завантажити пости</button>
+    <ul id="postsList"></ul>
+    <button id="cancelFetch">Скасувати запит</button>
+  </div>
+</body>
+</html>

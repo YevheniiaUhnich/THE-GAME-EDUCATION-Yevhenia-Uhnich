@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notes Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Менеджер нотаток</h1>
+      <button id="toggleTheme">Увімкнути темну тему</button>
+    </header>
+
+    <section id="login">
+      <label>Ваше ім’я: <input type="text" id="userName" /></label>
+      <button id="saveName">Зберегти</button>
+    </section>
+
+    <section id="noteEditor">
+      <h2>Нова нотатка</h2>
+      <input type="text" id="noteTitle" placeholder="Заголовок" />
+      <textarea id="noteBody" placeholder="Текст нотатки…"></textarea>
+      <button id="saveNote">Зберегти нотатку</button>
+      <button id="clearDraft">Очистити чернетку</button>
+
+      <div id="status" style="margin-top:5px; font-style: italic; color: gray;"></div>
+
+    </section>
+
+    <section id="notesList">
+      <h2>Ваші нотатки</h2>
+      <ul></ul>
+    </section>
+  </body>
+</html>
