@@ -18,16 +18,17 @@ import RegisterForm from './components/RegisterForm/RegisterForm';
 import FormReviews from './components/FormReviews/FormReviews';
 import PostFetcher from './components/PostFetcher/PostFetcher';
 import InputEffect from './components/InputEffect/InputEffect';
-
+import HookUseMemo from "./components/Hook/HookUseMemo";
+import TodoListHook from "./components/TodoListHook/TodoListHook";
+import UseRefTask from "./components/UseRefTask/UseRefTask";
+import InputWithPrev from "./components/UseRefTask/InputWithPrev";
 
 export default function App() {
-
   // useEffect(() => {
   //   const id = setInterval(() =>
   //     console.log('tick'), 1000);
   //   return () => clearInterval(id);
   // }, []);
-
 
   // const [isLoggidIn, setIsLoggidIn] = useState(false);
   // const handleLogin = () => {
@@ -45,15 +46,19 @@ export default function App() {
 
   return (
     <>
-      <Header /> 
+      <Header />
+      <UseRefTask />
+      <InputWithPrev />
+      <HookUseMemo />
       <InputEffect />
-      <PostFetcher /> 
-      
+      <TodoListHook />
+      <PostFetcher />
+
       {/* <FormReviews />  */}
       {/* <RegisterForm /> */}
-       {/* <Uncontrolled /> */}
+      {/* <Uncontrolled /> */}
       {/* <Controlled />  */}
-     {/* <UserCard user={user} /> 
+      {/* <UserCard user={user} /> 
       <Footer />
       <Button />
       <Toggle />
@@ -68,7 +73,6 @@ export default function App() {
       <UserList users={users} />
       <h2>Список постів</h2>
       <UserPost /> */}
-      
     </>
-  )
+  );
 }
