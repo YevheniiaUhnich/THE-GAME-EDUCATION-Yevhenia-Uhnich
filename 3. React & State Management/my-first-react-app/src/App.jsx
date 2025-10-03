@@ -1,0 +1,78 @@
+import Button from './components/Button/Button';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Toggle from './components/Toggle/Toggle';
+import UserCard from './components/UserCard/UserCard';
+import Form from './components/Form/Form';
+import ColorButton from './components/ColorButton/ColorButton';
+import AuthBox from './components/AuthBox/AuthBox';
+import InputText from './components/InputText/InputText';
+import RoleButton from './components/RoleButton/RoleButton';
+import TodoList from './components/TodoList/TodoList';
+import UserList from './components/UserList/UserList';
+// import { useEffect, useState } from 'react';
+import UserPost from './components/UserPost/UserPost';
+import Uncontrolled from './components/FormControl/Uncontrolied';
+import Controlled from './components/FormControl/Controlled';
+import RegisterForm from './components/RegisterForm/RegisterForm';
+import FormReviews from './components/FormReviews/FormReviews';
+import PostFetcher from './components/PostFetcher/PostFetcher';
+import InputEffect from './components/InputEffect/InputEffect';
+import HookUseMemo from "./components/Hook/HookUseMemo";
+import TodoListHook from "./components/TodoListHook/TodoListHook";
+import UseRefTask from "./components/UseRefTask/UseRefTask";
+import InputWithPrev from "./components/UseRefTask/InputWithPrev";
+
+export default function App() {
+  // useEffect(() => {
+  //   const id = setInterval(() =>
+  //     console.log('tick'), 1000);
+  //   return () => clearInterval(id);
+  // }, []);
+
+  // const [isLoggidIn, setIsLoggidIn] = useState(false);
+  // const handleLogin = () => {
+  //   setIsLoggidIn(true);
+  // }
+  // const user = {
+  //   name: "Yevhenia",
+  //   city: "Kyiv",
+  // };
+
+  // const users = [
+  //   { id: 1, name: 'Yevheniia', email: 'kjaine@gmail.com' },
+  //   { id: 2, name: 'Yevhenia2', email: 'kjaine1@ukr.net' },
+  // ];
+
+  return (
+    <>
+      <Header />
+      <UseRefTask />
+      <InputWithPrev />
+      <HookUseMemo />
+      <InputEffect />
+      <TodoListHook />
+      <PostFetcher />
+
+      {/* <FormReviews />  */}
+      {/* <RegisterForm /> */}
+      {/* <Uncontrolled /> */}
+      {/* <Controlled />  */}
+      {/* <UserCard user={user} /> 
+      <Footer />
+      <Button />
+      <Toggle />
+      <Form />
+      <ColorButton /> */}
+      {/* <AuthBox isLoggidIn={isLoggidIn} name="Yevheniia" onLogin={handleLogin} />
+      <InputText />
+      <RoleButton role="admin" />
+      <h2>Мій список завдань</h2>
+      <TodoList />
+      <h2>Список користувачів</h2>
+      <UserList users={users} />
+      <h2>Список постів</h2>
+      <UserPost /> */}
+    </>
+  );
+}

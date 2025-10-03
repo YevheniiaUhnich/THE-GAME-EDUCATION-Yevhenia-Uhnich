@@ -1,0 +1,26 @@
+/* TodoList.module.css */
+
+ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  margin-bottom: 120px;
+}
+
+.item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  color: white;
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.item:hover {
+  background-color: violet;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
